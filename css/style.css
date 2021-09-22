@@ -15,6 +15,28 @@ p {
     text-align: justify;
 }
 
+blockquote {
+    font-style: italic;
+}
+
+blockquote:before, blockquote:after {
+    font-family: "Times New Roman", serif;
+    content: "\"";
+    position: absolute;
+    margin-left: -2rem;
+    margin-top: -0.75rem;
+    font-size: 3.5rem;
+    color: #666;
+}
+
+blockquote:after {
+    position: unset;
+    margin-left: unset;
+    margin-top: -1rem;
+    margin-right: -1rem;
+    float: right;
+}
+
 .column {
     width: 100%;
     max-width: 50rem;
