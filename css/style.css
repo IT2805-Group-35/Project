@@ -1,1 +1,30 @@
+body {
+    background-color: antiquewhite;
+}
 
+h1 {
+    text-align: center;
+    width: 80%;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid grey;
+}
+
+p {
+    text-align: justify;
+}
+
+.column {
+    width: 100%;
+    max-width: 50rem;
+    float: left;
+/*    padding-left: 10rem;
+    padding-right: 10rem;*/
+}
+
+section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
