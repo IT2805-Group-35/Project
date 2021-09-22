@@ -59,3 +59,7 @@ li li {
 time {
     font-style: italic;
 }
+
+li {
+    margin-bottom: 20px;
+}
