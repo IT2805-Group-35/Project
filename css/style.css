@@ -4,11 +4,12 @@ body {
 
 h1 {
     text-align: center;
-    width: 80%;
+    width: 75%;
     line-height: 2;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid grey;
+    column-span: all;
 }
 
 p {
@@ -17,23 +18,24 @@ p {
 
 blockquote {
     font-style: italic;
+    font-size: 1.1rem;
 }
 
 blockquote:before, blockquote:after {
     font-family: "Times New Roman", serif;
-    content: "\"";
+    content: "“";
     position: absolute;
-    margin-left: -2rem;
-    margin-top: -0.75rem;
-    font-size: 3.5rem;
-    color: #666;
+    margin-left: -3rem;
+    margin-top: -1.25rem;
+    font-size: 5rem;
+    color: #7777;
 }
 
 blockquote:after {
+    content: "”";
     position: unset;
     margin-left: unset;
-    margin-top: -1rem;
-    margin-right: -1rem;
+    margin-right: -2rem;
     float: right;
 }
 
@@ -52,4 +54,8 @@ section {
 
 li li {
     list-style-type: lower-alpha;
+}
+
+time {
+    font-style: italic;
 }
