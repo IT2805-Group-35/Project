@@ -37,16 +37,19 @@ blockquote:after {
     float: right;
 }
 
-.column {
-    width: 100%;
-    max-width: 50rem;
-    float: left;
-/*    padding-left: 10rem;
-    padding-right: 10rem;*/
+
+@media screen and (min-width: 60rem) {
+    .content {
+        column-count: 2;
+    }
 }
 
 section {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+li li {
+    list-style-type: lower-alpha;
 }
