@@ -23,13 +23,19 @@ const socials = [
     },
 ];
 
-const common = document.createElement('div');
+/*
+Footer content
+ */
+const footer = document.createElement('footer');
+footer.textContent = 'Copyright © 2021 Johansen Luftfoto';
+
+const menu = document.createElement('div');
 
 menuItems.forEach(item => {
     const node = document.createElement('a');
     node.href = item.link
     node.textContent = item.name;
-    common.appendChild(node);
+    menu.appendChild(node);
 });
 
 socials.forEach(item => {
@@ -40,8 +46,8 @@ socials.forEach(item => {
     icon.alt = item.name;
     icon.style.width = '1rem';
     node.appendChild(icon);
-    common.appendChild(node);
+    menu.appendChild(node);
 });
 
-// Insert at top of body
-document.body.insertBefore(common, document.body.childNodes[0]);
+// Insert nodes
+document.body.insertBefore(menu, document.body.childNodes[0]);
