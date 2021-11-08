@@ -1,0 +1,15 @@
+#menu {
+    float: right;
+}
+
+#menu a {
+    display: block;
+    float: left;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    text-align: center;
+}

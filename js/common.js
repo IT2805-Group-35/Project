@@ -35,6 +35,7 @@ const footer = document.createElement('footer');
 footer.textContent = 'Copyright © 2021 Johansen Luftfoto';
 
 const menu = document.createElement('div');
+menu.id = 'menu';
 
 menuItems.forEach(item => {
     const node = document.createElement('a');
