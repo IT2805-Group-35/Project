@@ -21,6 +21,11 @@ const socials = [
         icon: 'icons/instagram.svg',
         link: 'https://instagram.com',
     },
+    {
+        name: 'Facebook',
+        icon: 'icons/facebook.svg',
+        link: 'http://facebook.com',
+    },
 ];
 
 /*
@@ -51,3 +56,4 @@ socials.forEach(item => {
 
 // Insert nodes
 document.body.insertBefore(menu, document.body.childNodes[0]);
+document.body.appendChild(footer);
