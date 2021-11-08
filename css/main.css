@@ -13,3 +13,39 @@
 footer {
     text-align: center;
 }
+
+p {
+    font-family: "Merriweather", sans-serif;
+    font-weight: lighter;
+}
+
+/*Header part 1 */
+#lighterFont {
+    font-family: "lato", sans-serif;
+    font-weight: 100;
+    font-size: xxx-large;
+}
+
+
+/*Header part 2 */
+#italicBoldFont {
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: xxx-large;
+}
+
+#infobox-1, #infobox-3 {
+    background-color: #1A232C;
+    color: #FFFFFF;
+}
+
+#infobox-2 {
+    background-color: #FEFFFE;
+}
+
+h2, h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+}
+
