@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #menu {
     float: right;
 }
@@ -8,6 +12,17 @@
     margin: 0.5rem;
     text-decoration: none;
     color: black;
+}
+
+#Landscape-Video {
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    width: 100%;
+}
+
+header {
+    padding: 10rem 5rem 25rem 25rem;
 }
 
 footer {
