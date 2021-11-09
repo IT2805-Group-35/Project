@@ -7,4 +7,4 @@ video.muted = true;
 video.loop = true;
 video.play();
 
-header.style.height = windowHeight.toString() + 'px';
+header.style.height = (windowHeight - menu.clientHeight).toString() + 'px';
