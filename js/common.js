@@ -38,6 +38,9 @@ Footer content
 const footer = document.createElement('footer');
 footer.textContent = 'Copyright © 2021 Johansen Luftfoto';
 
+const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
 const menu = document.createElement('div');
 menu.id = 'menu';
 
@@ -54,7 +57,6 @@ socials.forEach(item => {
     const icon = document.createElement('img');
     icon.src = item.icon;
     icon.alt = item.name;
-    icon.style.width = '1rem';
     node.appendChild(icon);
     menu.appendChild(node);
 });
