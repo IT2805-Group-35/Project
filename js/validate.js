@@ -1,57 +1,29 @@
+function validation()
+{
+    var form = document.getElementById("form");
+    var email = document.getElementById("email").value;
+    var text = document.getElementById("text");
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-
-const isValidEmail = (email) => {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-  };
-  
-  const isValidPhone = (phone) => {
-    const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-    return re.test(String(phone).toLowerCase());
-  };
-
-const form = document.querySelector('form');
-const nameInput = document.querySelector("input[name='name']");
-const thankYou = document.querySelector("input[name='.takk']");
-const emailInput = document.querySelector("input[name='email']");
-
-let isFormValid = false;
-
-const resetElm = (elm) => {
-    elm.classList.remove("invalid");
-    elm.nextElementSibling.classList.add("hidden");
+    if (email.match(pattern))
+    {
+        form.classList.add("valid");
+        form.classList.remove("invalid");
+        text.innerHTML = "Your Email Address is Valid"
+        text.style.color = "#00ff00";
+    }
+    else
+    {
+        form.classList.remove("valid");
+        form.classList.add("invalid");
+        text.innerHTML = "Please Enter Valid Email Address"
+        text.style.color = "#ff0000";
+    }
+    if (email == "")
+    {
+        form.classList.remove("valid");
+        form.classList.remove("invalid");
+        text.innerHTML = "";
+        text.style.color = "#00ff00";
+    }
 }
-
-const invalidateElm = () => {
-    elm.classList.add("invalid");
-    elm.nextElementSibling.classList.remove("hidden");
-}
-
-const validateInputs = () => {
-    isFormValid = true;
-    resetElm(nameInput);
-    resetElm(emailInput);
-
-    if (!nameInput.value) {
-        isFormValid = false;
-        invalidateElm(nameInput);
-    }
-    if (!isValidEmail(emailInput.value)) {
-        isFormValid = false;
-        invalidateElm(emailInput);
-    }
-};
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    validateInputs();
-    if (isFormValid){
-        form.remove();
-        thankYou.classList.remove("hidden");
-
-    }
-});
-
-nameInput.addEventListener("input", () => {
-    validateInputs();
-})
