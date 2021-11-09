@@ -41,6 +41,15 @@ p {
     font-size: small;
 }
 
+q {
+    font-family: "Lato", sans-serif;
+    font-size: xx-large;
+}
+
+.quote-author {
+    text-align: right;
+    margin-right: 2rem;
+}
 /*Header part 1 */
 .lighter-font {
     color: #FFFFFF;
@@ -132,18 +141,18 @@ h2, h3 {
     float: left;
     width: 1rem;
     margin: 5rem;
+    padding-top: 2rem;
+    height: 7rem;
+    border-radius: 0.1rem;
 }
 
 .separator.green {
-    padding-top: 2rem;
-    height: 10rem;
     background-color: #40531B;
 }
 
 .separator.orange {
-    height: 5rem;
     background-color: #E55812;
-    margin-top: 10rem;
+
 }
 
 @media screen and (max-width:728px) {
