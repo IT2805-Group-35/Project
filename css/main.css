@@ -158,3 +158,149 @@ h2, h3 {
         display: none;
     }
 }
+
+/* Lightbox */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: none;
+    overflow: auto;
+}
+
+.lightbox__content {
+    width: 90%;
+    height: calc(100vh - 80px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.lightbox__header {
+    display: flex;
+    color: white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox__image-count {
+    display: block;
+}
+
+.lightbox__slides {
+    position: relative;
+}
+
+.lightbox__slide {
+    display: none;
+    height: calc(100vh - 205px);
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.lightbox__image {
+    object-fit: scale-down;
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 235px);
+}
+
+.lightbox__slide--active {
+    display: flex;
+}
+
+.lightbox__thumbs {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    user-select: none;
+    position: relative;
+    transition: all 0.35s ease-in-out;
+}
+
+.lightbox__thumb {
+    height: 100px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+
+.lightbox__thumb--active {
+    opacity: 1;
+}
+
+.lightbox__navigation {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -100px;
+}
+
+.lightbox__btn {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lightbox__btn:hover {
+    color: rgb(170, 170, 170);
+}
+
+.lightbox__btn--previous-image {
+    left: 15px;
+}
+
+.lightbox__btn--next-image {
+    right: 15px;
+}
+
+.lightbox__btn--close {
+    top: 5px;
+    right: 15px;
+}
+
+.lightbox--show {
+    display: block;
+}
+
+.lightbox__image-description {
+    height: 30px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.lightbox__progress-bar-container {
+    width: 100%;
+    height: 5px;
+}
+
+.lightbox__progress-bar {
+    height: 5px;
+    background: crimson;
+    transition: all 0.35s ease-in-out;
+}
+
+@media screen and (max-width: 576px) {
+    .lightbox__content {
+        width: 100%;
+    }    
+}
