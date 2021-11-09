@@ -36,6 +36,7 @@ p {
 
 /*Header part 1 */
 #lighterFont {
+    color: #FFFFFF;
     font-family: "lato", sans-serif;
     font-weight: 100;
     font-size: xxx-large;
@@ -44,6 +45,7 @@ p {
 
 /*Header part 2 */
 #italicBoldFont {
+    color: #FFFFFF;
     font-family: "lato", sans-serif;
     font-weight: bold;
     font-style: italic;
