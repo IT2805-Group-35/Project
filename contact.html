@@ -5,39 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <div class="contact-us">
-        <h1>Kontakt oss</h1>
-        <p>Send gjerne en uforpliktende melding om pris
-        </p>
+    <div>
+        <h3>
+            Email Validation Check
+        </h3>
+        <form id="form" action="#">
+            <div class="inputbox">
+                <input type="text" name="" id="email" placeholder="enter email" onkeydown="validation()">
+                <span id="text"></span>
+            </div>
+        </form>
     </div>
+    <script src="validate.js">
 
-    <form>
-        <div class="form-group">
-            <label>Full Name</label>
-            <input
-                name="name"
-                class ="" 
-                placeholder="Your first and last name " />
-            <div class="error-hint hidden">Du må skrive inn et navn</div>
-        </div>
-
-        <div class="form-group">
-            <label>Email</label>
-            <input
-                name="email"
-                class ="" 
-                placeholder="Skriv inn din mailadresse" />
-            <div class="error-hint hidden">Din email er skrevet feil</div>
-        </div>
-
-        <hr />
-        <button>Submit Message</button>
-    </form>
-    <div class="takk hidden">Takk for meldingen, vi kontakter deg så raskt som mulig! :)</div>
-    <script src="validate.js"></script>
+    </script> 
 </body>
 </html>
-
