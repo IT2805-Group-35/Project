@@ -47,6 +47,7 @@ const windowWidth = window.innerWidth || document.documentElement.clientWidth;
 
 const menu = document.createElement('div');
 menu.id = 'menu';
+menu.style.zIndex = 1000;
 
 menuItems.forEach(item => {
     const node = document.createElement('a');
