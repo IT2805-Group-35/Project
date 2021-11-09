@@ -126,35 +126,27 @@ h2, h3 {
     margin-bottom: 2rem;
 }
 
-.green-separator {
+.separator {
     display: block;
     float: left;
     width: 1rem;
-    padding-top: 2rem;
-    height: 10rem;
-    max-width: 1rem;
-    background-color: #40531B;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 5rem;
 }
 
-.orange-separator {
-    display: block;
-    float: left;
-    width: 1rem;
+.separator.green {
+    padding-top: 2rem;
+    height: 10rem;
+    background-color: #40531B;
+}
+
+.separator.orange {
     height: 5rem;
-    max-width: 1rem;
     background-color: #E55812;
     margin-top: 10rem;
-    margin-bottom: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
 }
 
 @media screen and (max-width:728px) {
-    .orange-separator, .green-separator {
+    .separator, .separator {
         display: none;
     }
 }
