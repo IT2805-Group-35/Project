@@ -4,14 +4,19 @@ body {
 
 #menu {
     float: right;
+    padding: 1rem;
 }
 
 #menu a {
-    display: block;
-    float: left;
-    margin: 0.5rem;
+    padding: 0 0.5rem;
     text-decoration: none;
     color: black;
+    font-size: 1.3rem;
+}
+
+#menu a img {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 #Landscape-Video {
