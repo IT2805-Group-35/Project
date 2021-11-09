@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>Johansen Luftfoto - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/lightbox.js" defer></script>
+    <script src="js/portfolio.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/common.js" defer></script>
 
@@ -32,7 +35,7 @@
             height: 90vh;
         }
 
-        h2 {
+        .portfolio h2 {
             color: white;
             font-family: lato;
             font-weight: 200;
@@ -40,6 +43,17 @@
             display: block;
             position: absolute;
             top: 50%;
+        }
+
+        .image-series {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .image-series__image {
+            max-height: 100px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -57,6 +71,22 @@
     <section class="portfolio portfolio__eiendom">
         <h2>eiendom</h2>
     </section>
+
+    <!-- Will be some kind of masonry tiles of clickable pictures -->
+    <!-- Each image-series will have its own lightbox -->
+    <h2>Natur</h2>
+    <div class="image-series" id="nature-photos"></div>
+
+    <h2>Event</h2>
+    <div class="image-series" id="event-photos"></div>
+
+    <h2>Eiendom</h2>
+    <div class="image-series" id="property-photos"></div>
+
+    <!-- Containers wchich will hold the lightboxes -->
+    <div class="lightbox" id="nature-photos-lightbox"></div>
+    <div class="lightbox" id="event-photos-lightbox"></div>
+    <div class="lightbox" id="property-photos-lightbox"></div>
 
 </body>
 
