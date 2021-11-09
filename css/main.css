@@ -35,7 +35,7 @@ p {
 }
 
 /*Header part 1 */
-#lighterFont {
+.lighter-font {
     color: #FFFFFF;
     font-family: "lato", sans-serif;
     font-weight: 100;
@@ -44,7 +44,7 @@ p {
 
 
 /*Header part 2 */
-#italicBoldFont {
+.italic-bold-font {
     color: #FFFFFF;
     font-family: "lato", sans-serif;
     font-weight: bold;
@@ -52,13 +52,40 @@ p {
     font-size: xxx-large;
 }
 
-#infobox-1, #infobox-3 {
-    background-color: #1A232C;
-    color: #FFFFFF;
+.wrapper {
+    display: grid;
 }
 
-#infobox-2 {
+.infobox-1 {
+    background-color: #1A232C;
+    color: #FFFFFF;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.infobox-2 {
     background-color: #FEFFFE;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.column-1 {
+    display: block;
+    float: left;
+    max-width: 40%;
+    background-color: inherit;
+    color: inherit;
+    padding-left: 10%;
+}
+
+.column-2 {
+    display: block;
+    float: left;
+    max-width: 40%;
+    background-color: inherit;
 }
 
 h2, h3 {
@@ -77,4 +104,10 @@ h2, h3 {
     font-family: "Lato", sans-serif;
     font-weight: lighter;
     font-size: xx-large;
+}
+
+.image-left {
+    display: block;
+    float: left;
+    max-width: 40%;
 }
