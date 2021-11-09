@@ -35,8 +35,9 @@ footer {
 }
 
 p {
-    font-family: "Merriweather", sans-serif;
+    font-family: "Merriweather", serif;
     font-weight: lighter;
+    font-size: small;
 }
 
 /*Header part 1 */
@@ -59,6 +60,7 @@ p {
 
 .wrapper {
     display: grid;
+    margin-bottom: 10rem;
 }
 
 .infobox-1 {
@@ -80,17 +82,23 @@ p {
 .column-1 {
     display: block;
     float: left;
-    max-width: 40%;
+    width: 30%;
+    max-width: 30%;
     background-color: inherit;
     color: inherit;
     padding-left: 10%;
+    padding-top: 5rem;
 }
 
 .column-2 {
     display: block;
     float: left;
-    max-width: 40%;
+    width: 30%;
+    max-width: 30%;
     background-color: inherit;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 5rem;
 }
 
 h2, h3 {
@@ -114,5 +122,39 @@ h2, h3 {
 .image-left {
     display: block;
     float: left;
-    max-width: 40%;
+    max-width: 80%;
+    margin-bottom: 2rem;
+}
+
+.green-separator {
+    display: block;
+    float: left;
+    width: 1rem;
+    padding-top: 2rem;
+    height: 10rem;
+    max-width: 1rem;
+    background-color: #40531B;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.orange-separator {
+    display: block;
+    float: left;
+    width: 1rem;
+    height: 5rem;
+    max-width: 1rem;
+    background-color: #E55812;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+@media screen and (max-width:728px) {
+    .orange-separator, .green-separator {
+        display: none;
+    }
 }
