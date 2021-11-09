@@ -10,6 +10,10 @@ const menuItems = [
         name: "Item 2",
         link: "item2.html",
     },
+    {
+        name: "portfolio",
+        link: "portfolio.html"
+    }
 ];
 
 /*
