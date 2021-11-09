@@ -3,7 +3,8 @@ body {
 }
 
 #menu {
-    float: right;
+    position: fixed;
+    right: 0;
     padding: 1rem;
 }
 
