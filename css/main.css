@@ -16,17 +16,17 @@ body {
 
 #Landscape-Video {
     position: fixed;
-    top: 0;
     z-index: -1000;
-    width: 100%;
 }
 
 header {
-    padding: 10rem 5rem 25rem 25rem;
+    padding: 10% 5rem 25% 10%;
 }
 
 footer {
     text-align: center;
+    clear: both;
+    padding: 2rem;
 }
 
 p {
