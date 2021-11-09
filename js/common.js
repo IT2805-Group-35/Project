@@ -3,17 +3,17 @@ Top common items
  */
 const menuItems = [
     {
-        name: "Item 1",
-        link: "item1.html",
+        name: "Forside",
+        link: "index.html",
     },
     {
-        name: "Item 2",
-        link: "item2.html",
+        name: "Om meg",
+        link: "about.html",
     },
     {
         name: "portfolio",
         link: "portfolio.html"
-    }
+    },
 ];
 
 /*
