@@ -84,20 +84,31 @@ q {
     margin-bottom: 10rem;
 }
 
-.infobox-1 {
-    background-color: #1A232C;
-    color: #FFFFFF;
+.infobox {
     width: 100%;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
+    padding-bottom: 7rem;
+    padding-top: 5rem;
 }
 
-.infobox-2 {
+.infobox.navy {
+    background-color: #1A232C;
+    color: #FFFFFF;
+}
+
+.infobox.white {
     background-color: #FEFFFE;
-    width: 100%;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
+}
+
+.infobox.navy.top {
+    margin-bottom: 60rem;
+}
+
+.infobox.navy.middle {
+    box-shadow: 2rem 2rem rgba(26, 35, 44, 0.5);
+}
+
+.infobox.navy.bottom {
+    margin-bottom: 20rem;
 }
 
 .column-1 {
