@@ -9,20 +9,19 @@ The upper part of the arrow is lined from X3, Y3 (upper, right) to X4, Y4 (botto
 function drawArrow(X0, Y0, X1, Y1, X2, Y2, X3, Y3, X4, Y4, X5, Y5) {
     context.beginPath();
     context.moveTo(X0, Y0);
-    context.lineWidth = 8;
     context.lineCap = 'round';
     context.lineJoin = 'round';
     context.lineTo(X1, Y1);
     context.lineTo(X2, Y2);
-    context.bezierCurveTo(130, 65, 125, 60, X3, Y3)
+    context.bezierCurveTo(130, 65, 125, 60, X3, Y3);
     context.lineTo(X4, Y4);
     context.lineTo(X5, Y5);
-    context.bezierCurveTo(35, 60, 30, 65, X0, Y0)
-    context.fillStyle = "#E55812";
+    context.bezierCurveTo(35, 60, 30, 65, X0, Y0);
+    context.fillStyle = 'rgba(0, 0, 0, 0.4)';
     context.fill();
-    context.strokeStyle = '#E55812';
-    context.stroke();
 }
 
 drawArrow(40, 70, 80, 90, 120, 70, 120, 60, 80, 80, 40, 60);
+
+
 
