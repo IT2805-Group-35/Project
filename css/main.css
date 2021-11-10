@@ -200,7 +200,6 @@ h2, h3 {
 
 /* Portfolio */
 
-/* temp css her */
 .portfolio-hero {
     background-size: cover;
     background-position: center;
@@ -210,15 +209,15 @@ h2, h3 {
 }
 
 .portfolio-hero.natur {
-    background-image: url('./images/1920/DJI_0900.JPG.webp');
+    background-image: url('../images/1920/DJI_0900.JPG.webp');
 }
 
 .portfolio-hero.events {
-    background-image: url('./images/1920/DJI_0661.JPG');
+    background-image: url('../images/1920/DJI_0661.JPG');
 }
 
 .portfolio-hero.eiendom {
-    background-image: url('./images/1920/DJI_0152.JPG.webp');
+    background-image: url('../images/1920/DJI_0152.JPG.webp');
 }
 
 .portfolio-hero h2 {
@@ -266,7 +265,6 @@ h2, h3 {
 .portfolio-video {
     width: 100%;
 }
-
 
 /* Lightbox */
 
