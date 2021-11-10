@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 body {
     margin: 0;
 }
@@ -81,7 +83,6 @@ q {
 
 .wrapper {
     display: grid;
-    margin-bottom: 10rem;
 }
 
 .infobox {
@@ -99,16 +100,16 @@ q {
     background-color: #FEFFFE;
 }
 
-.infobox.navy.top {
-    margin-bottom: 60rem;
+.infobox.top {
+    margin-bottom: 100vh;
 }
 
-.infobox.navy.middle {
+.infobox.middle {
     box-shadow: 2rem 2rem rgba(26, 35, 44, 0.5);
 }
 
-.infobox.navy.bottom {
-    margin-bottom: 20rem;
+.infobox.bottom {
+    margin-bottom: 5vh;
 }
 
 .column-1 {

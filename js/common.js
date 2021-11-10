@@ -46,6 +46,7 @@ const windowHeight = window.innerHeight || document.documentElement.clientHeight
 const windowWidth = window.innerWidth || document.documentElement.clientWidth;
 
 const menu = document.createElement('div');
+const menuWrapper = document.createElement('div');
 menu.id = 'menu';
 menu.style.zIndex = 1000;
 
@@ -66,6 +67,9 @@ socials.forEach(item => {
     menu.appendChild(node);
 });
 
+menuWrapper.appendChild(menu);
+menuWrapper.classList.add('menu-wrapper');
+
 // Insert nodes
-document.body.insertBefore(menu, document.body.childNodes[0]);
+document.body.insertBefore(menuWrapper, document.body.childNodes[0]);
 document.body.appendChild(footer);
