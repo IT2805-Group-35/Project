@@ -4,139 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <title>Johansen Luftfoto - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/lightbox.js" defer></script>
     <script src="js/portfolio.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/common.js" defer></script>
-
-    <style>
-        /* temp css her */
-        .portfolio {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        }
-
-        .portfolio__natur {
-            background-image: url('./images/1920/DJI_0900.JPG.webp');
-            height: 90vh;
-        }
-
-        .portfolio__events {
-            background-image: url('./images/1920/DJI_0661.JPG');
-            height: 90vh;
-        }
-
-        .portfolio__eiendom {
-            background-image: url('./images/1920/DJI_0152.JPG.webp');
-            height: 90vh;
-        }
-
-        .portfolio h2 {
-            color: white;
-            font-family: lato;
-            font-weight: 200;
-            font-size: 96px;
-            display: block;
-            position: absolute;
-            top: 50%;
-        }
-
-        .image-series {
-            display: flex;
-            gap: 5px;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-
-        .image-series__image {
-            object-fit: cover;
-            max-height: 200px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
 
-    <section class="portfolio portfolio__natur">
-        <h2 class="">natur</h2>
+    <section class="portfolio-hero natur">
+       <h2>Natur</h2>
     </section>
 
-    <section class="portfolio portfolio__events">
-        <h2>events</h2>
+    <section class="portfolio-hero events">
+        <h2>Events</h2>
     </section>
 
-    <section class="portfolio portfolio__eiendom">
-        <h2>eiendom</h2>
+    <section class="portfolio-hero eiendom">
+        <h2>Eiendom</h2>
     </section>
-
 
     <div class="wrapper">
 
-        <div class="infobox navy">
+        <section class="infobox navy">
 
             <div class="column-1">
                 <h2 class="highlight green">Natur</h2>
                 <p>
-                    Mitt navn er Kjell-inge, ipsum dolor sit amet darth hutt solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
+                    Ipsum dolor sit amet darth hutt solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
                     han binks fett boba aayla antilles alderaan. Jango greedo qui-gon hutt. Kamino fett skywalker  windu vader. Darth leia wampa binks. Skywalker alderaan mace kessel lando antilles solo cade chewbacca.
                     Anakin utapau skywalker owen skywalker c-3p0 darth. Dagobah secura chewbacca zabrak jade.  Hutt obi-wan maul windu dantooine sidious. Darth c-3p0 palpatine twi'lek. Hutt maul jar jango. Antilles binks lando watto r2-d2. 
                 </p>
+                <p>
+                    Solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
+                    han binks fett boba aayla antilles alderaan. Jango greedo qui-gon hutt. Kamino fett skywalker  windu vader. Darth leia wampa binks. Skywalker alderaan mace kessel lando antilles solo cade chewbacca.
+                    Anakin utapau skywalker owen skywalker c-3p0 darth. Dagobah secura chewbacca zabrak jade.  Hutt obi-wan maul windu dantooine sidious. Darth c-3p0 palpatine twi'lek. Hutt maul jar jango. Antilles binks lando watto r2-d2. 
+                </p>
+                <h3>Book oppdrag</h3>
             </div>
             <div class="green separator"></div>
             <div class="column-2">
                 <div class="image-series" id="nature-photos"></div>
+                <h3 class="image-series__see-more">Se mer</h3>
             </div>
             
-        </div>
+        </section>
 
-        <div class="infobox">
+        <section class="infobox white">
 
             <div class="column-1">
 
                 <div class="image-series" id="event-photos"></div>
+                <h3 class="image-series__see-more">Se mer</h3>
 
             </div>
 
             <div class="orange separator"></div>
 
             <div class="column-2">
+
                 <h2 class="highlight orange">Event</h2>
                 <p>
-                    Mitt navn er Kjell-inge, ipsum dolor sit amet darth hutt solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
+                    Ipsum dolor sit amet darth hutt solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
                     han binks fett boba aayla antilles alderaan. Jango greedo qui-gon hutt. Kamino fett skywalker  windu vader. Darth leia wampa binks. Skywalker alderaan mace kessel lando antilles solo cade chewbacca.
                     Anakin utapau skywalker owen skywalker c-3p0 darth. Dagobah secura chewbacca zabrak jade.  Hutt obi-wan maul windu dantooine sidious. Darth c-3p0 palpatine twi'lek. Hutt maul jar jango. Antilles binks lando watto r2-d2. 
                 </p>
+                <p>
+                    Solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
+                    han binks fett boba aayla antilles alderaan. Jango greedo qui-gon hutt. Kamino fett skywalker  windu vader. Darth leia wampa binks. Skywalker alderaan mace kessel lando antilles solo cade chewbacca.
+                    Anakin utapau skywalker owen skywalker c-3p0 darth. Dagobah secura chewbacca zabrak jade.  Hutt obi-wan maul windu dantooine sidious. Darth c-3p0 palpatine twi'lek. Hutt maul jar jango. Antilles binks lando watto r2-d2. 
+                </p>
+                <h3>Book oppdrag</h3>
             </div>
             
-        </div>
+        </section>
 
-        <div class="infobox navy">
+        <video autoplay loop muted class="portfolio-video">
+            <source src="https://folk.ntnu.no/joakilan/webtek-video/webtek.webm" type="video/webm">
+            <source src="https://folk.ntnu.no/joakilan/webtek-video/webtek_test2.mp4" type="video/mp4">
+        </video>
+
+        <section class="infobox navy">
 
             <div class="column-1">
 
-                <h2 class="highlight orange">Eiendom</h2>
+                <h2 class="highlight blue">Eiendom</h2>
                 <p>
-                    Mitt navn er Kjell-inge, ipsum dolor sit amet darth hutt solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
+                    Ipsum dolor sit amet darth hutt solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
                     han binks fett boba aayla antilles alderaan. Jango greedo qui-gon hutt. Kamino fett skywalker  windu vader. Darth leia wampa binks. Skywalker alderaan mace kessel lando antilles solo cade chewbacca.
                     Anakin utapau skywalker owen skywalker c-3p0 darth. Dagobah secura chewbacca zabrak jade.  Hutt obi-wan maul windu dantooine sidious. Darth c-3p0 palpatine twi'lek. Hutt maul jar jango. Antilles binks lando watto r2-d2. 
                 </p>
-                
+                <p>
+                    Solo c-3po lars solo jawa maul jabba r2-d2.  Mon tusken raider yoda kessel sidious palpatine obi-wan. Mara secura antilles jinn jawa calrissian droid darth anakin. Aayla solo darth luke mon thrawn greedo yoda lando. Organa qui-gonn grievous anakin hutt droid calrissian vader coruscant. Binks palpatine
+                    han binks fett boba aayla antilles alderaan. Jango greedo qui-gon hutt. Kamino fett skywalker  windu vader. Darth leia wampa binks. Skywalker alderaan mace kessel lando antilles solo cade chewbacca.
+                    Anakin utapau skywalker owen skywalker c-3p0 darth. Dagobah secura chewbacca zabrak jade.  Hutt obi-wan maul windu dantooine sidious. Darth c-3p0 palpatine twi'lek. Hutt maul jar jango. Antilles binks lando watto r2-d2. 
+                </p>
+                <h3>Book oppdrag</h3>
             </div>
 
-            <div class="green separator"></div>
+            <div class="blue separator"></div>
 
             <div class="column-2">
 
                 <div class="image-series" id="property-photos"></div>
+                <h3 class="image-series__see-more">Se mer</h3>
 
             </div>
             
-        </div>
+        </section>
 
     </div>
 

@@ -170,7 +170,10 @@ h2, h3 {
 
 .separator.orange {
     background-color: #E55812;
+}
 
+.separator.blue {
+    background-color: rgba(20, 134, 170, 1);
 }
 
 @media screen and (max-width:728px) {
@@ -194,6 +197,76 @@ h2, h3 {
     background: linear-gradient(180deg, rgba(20, 134, 170, 0.4) 70%, rgba(255,255,255,0) 30%);
     display: inline;
 }
+
+/* Portfolio */
+
+/* temp css her */
+.portfolio-hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.portfolio-hero.natur {
+    background-image: url('./images/1920/DJI_0900.JPG.webp');
+}
+
+.portfolio-hero.events {
+    background-image: url('./images/1920/DJI_0661.JPG');
+}
+
+.portfolio-hero.eiendom {
+    background-image: url('./images/1920/DJI_0152.JPG.webp');
+}
+
+.portfolio-hero h2 {
+    margin: 0;
+    color: white;
+    font-size: 100px;
+    font-weight: 100;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.portfolio-hero.natur h2 {
+    top: 52vh;
+    left: 50%;
+}
+
+.portfolio-hero.events h2 {
+    bottom: 10vh;
+    right: 5%;
+}
+
+.portfolio-hero.eiendom h2 {
+    top: 10vh;
+    left: 15%;
+}
+
+.image-series {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.image-series__image {
+    object-fit: cover;
+    height: 200px;
+    max-width: 250px;
+    cursor: pointer;
+}
+
+.image-series__see-more {
+    cursor: pointer;
+}
+
+.portfolio-video {
+    width: 100%;
+}
+
 
 /* Lightbox */
 

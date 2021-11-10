@@ -13,20 +13,20 @@ const naturePhotos = [
         'description' : 'Bilde 2: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0261.JPG.webp',
-        'description' : 'Bilde 3: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
-    },
-    { 
-        'src': 'DJI_0438.JPG.webp',
-        'description' : 'Bilde 4: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+        'src': 'DJI_0459.JPG.webp',
+        'description' : 'Bilde 6: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
         'src': 'DJI_0457.JPG.webp',
         'description' : 'Bilde 5: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0459.JPG.webp',
-        'description' : 'Bilde 6: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+        'src': 'DJI_0438.JPG.webp',
+        'description' : 'Bilde 4: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+    },
+    { 
+        'src': 'DJI_0261.JPG.webp',
+        'description' : 'Bilde 3: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     }
 ];
 
@@ -117,6 +117,8 @@ imageSeries('#event-photos', eventPhotos, eventPhotosLightbox);
 imageSeries('#property-photos', propertyPhotos, propertyPhotosLightbox);
 
 function imageSeries(selector, images, lightbox) {
+    const node = document.querySelector(selector);
+
     images.every((image, index) => {
         if (index > 3) return false;
         const img = document.createElement('img');
@@ -125,8 +127,14 @@ function imageSeries(selector, images, lightbox) {
             lightbox.open(index);
         })
         img.className = 'image-series__image';
-        document.querySelector(selector).append(img);
+        
+        node.append(img);
+
         return true;
+    });
+
+    node.nextElementSibling.addEventListener('click', () => {
+        lightbox.open();
     });
 }
 
