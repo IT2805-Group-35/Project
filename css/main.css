@@ -4,6 +4,7 @@ body {
 
 #menu {
     position: fixed;
+    top: 0;
     right: 0;
     padding: 1rem;
 }
@@ -22,11 +23,21 @@ body {
 
 #Landscape-Video {
     position: fixed;
-    z-index: -1000;
+    top: 0;
+    z-index: -1;
+    min-height: 100vh;
+    min-width: 100%;
 }
 
 header {
-    padding: 10% 5rem 0 10%;
+    /*padding: 10% 5rem 0 10%;*/
+    height: 100vh;
+    overflow: hidden;
+}
+
+header h1 {
+    margin-top: 30vh;
+    margin-left: 10%;
 }
 
 footer {
