@@ -199,6 +199,11 @@ h2, h3 {
     display: inline;
 }
 
+.clean-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Portfolio */
 
 .portfolio-hero {
