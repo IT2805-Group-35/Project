@@ -11,7 +11,7 @@ const menuItems = [
         link: "about.html",
     },
     {
-        name: "portfolio",
+        name: "Portfolio",
         link: "portfolio.html"
     },
     {

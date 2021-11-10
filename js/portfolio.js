@@ -117,7 +117,8 @@ imageSeries('#event-photos', eventPhotos, eventPhotosLightbox);
 imageSeries('#property-photos', propertyPhotos, propertyPhotosLightbox);
 
 function imageSeries(selector, images, lightbox) {
-    images.forEach((image, index) => {
+    images.every((image, index) => {
+        if (index > 3) return false;
         const img = document.createElement('img');
         img.src = imageOptions.thumbPath + image.src;
         img.addEventListener('click', () => {
@@ -125,6 +126,7 @@ function imageSeries(selector, images, lightbox) {
         })
         img.className = 'image-series__image';
         document.querySelector(selector).append(img);
+        return true;
     });
 }
 
