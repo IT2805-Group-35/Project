@@ -55,7 +55,7 @@ footer {
     padding: 2rem;
 }
 
-p {
+p, ul {
     font-family: "Merriweather", serif;
     font-weight: lighter;
     font-size: small;
