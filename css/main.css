@@ -192,7 +192,7 @@ h2, h3 {
 }
 
 @media screen and (max-width:728px) {
-    .separator, .separator {
+    .separator {
         display: none;
     }
 }
