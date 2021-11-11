@@ -78,6 +78,10 @@ q {
     text-align: right;
     margin-right: 2rem;
 }
+
+.quote-author:before {
+    content: "— ";
+}
 /*Header part 1 */
 .lighter-font {
     color: #FFFFFF;
