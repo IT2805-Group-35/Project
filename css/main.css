@@ -43,6 +43,12 @@ header h1 {
     margin-left: 10%;
 }
 
+#arrow {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 80px);
+}
+
 footer {
     text-align: center;
     clear: both;
