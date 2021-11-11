@@ -177,6 +177,10 @@ h2, h3 {
     background-color: rgba(20, 134, 170, 1);
 }
 
+.top-margin-7 {
+    margin-top: 7rem;
+}
+
 @media screen and (max-width:728px) {
     .separator, .separator {
         display: none;
@@ -219,7 +223,7 @@ h2, h3 {
 }
 
 .portfolio-hero.events {
-    background-image: url('../images/1920/DJI_0661.JPG');
+    background-image: url('../images/1920/DJI_0661.JPG.webp');
 }
 
 .portfolio-hero.eiendom {
