@@ -5,19 +5,19 @@ const imageOptions = {
 
 const naturePhotos = [
     { 
-        'src': 'DJI_0152.JPG.webp',
+        'src': 'DJI_0660.JPG',
         'description' : 'Bilde 1: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0255.JPG.webp',
+        'src': 'DJI_0661.JPG.webp',
         'description' : 'Bilde 2: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0459.JPG.webp',
+        'src': 'DJI_0457.JPG.webp',
         'description' : 'Bilde 6: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0457.JPG.webp',
+        'src': 'DJI_0262.JPG',
         'description' : 'Bilde 5: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
@@ -32,15 +32,15 @@ const naturePhotos = [
 
 const eventPhotos = [
     { 
-        'src': 'DJI_0853.JPG.webp',
+        'src': 'DJI_0905.JPG.webp',
         'description' : 'Bilde 1: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0856.JPG.webp',
+        'src': 'DJI_0853.JPG.webp',
         'description' : 'Bilde 2: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0858.JPG.webp',
+        'src': 'DJI_0004.JPG',
         'description' : 'Bilde 3: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
@@ -59,15 +59,15 @@ const eventPhotos = [
 
 const propertyPhotos = [
     { 
-        'src': 'DJI_0853.JPG.webp',
+        'src': 'DJI_0457.JPG.webp',
         'description' : 'Bilde 1: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0856.JPG.webp',
+        'src': 'DJI_0262.JPG',
         'description' : 'Bilde 2: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0858.JPG.webp',
+        'src': 'DJI_0463.JPG',
         'description' : 'Bilde 3: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
@@ -112,24 +112,27 @@ const naturePhotosLightbox = new Lightbox('#nature-photos-lightbox', naturePhoto
 const eventPhotosLightbox = new Lightbox('#event-photos-lightbox', eventPhotos, imageOptions).mount();
 const propertyPhotosLightbox = new Lightbox('#property-photos-lightbox', propertyPhotos, imageOptions).mount();
 
-imageSeries('#nature-photos', naturePhotos, naturePhotosLightbox);
-imageSeries('#event-photos', eventPhotos, eventPhotosLightbox);
-imageSeries('#property-photos', propertyPhotos, propertyPhotosLightbox);
+imageSeries('#nature-photos', 4, naturePhotos, naturePhotosLightbox);
+imageSeries('#event-photos', 3, eventPhotos, eventPhotosLightbox);
+imageSeries('#property-photos', 3, propertyPhotos, propertyPhotosLightbox);
 
-function imageSeries(selector, images, lightbox) {
+function imageSeries(selector, displayQuantity, images, lightbox) {
     const node = document.querySelector(selector);
+    let sumOfWidths = 0;
+
+    console.log(`Width of container ${node.offsetWidth}.`)
 
     images.every((image, index) => {
-        if (index > 3) return false;
+        if (index >= displayQuantity) return false;
+
         const img = document.createElement('img');
-        img.src = imageOptions.thumbPath + image.src;
+        img.src = imageOptions.imagePath + image.src;
         img.addEventListener('click', () => {
             lightbox.open(index);
         })
         img.className = 'image-series__image';
         
         node.append(img);
-
         return true;
     });
 

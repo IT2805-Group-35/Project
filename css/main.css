@@ -224,15 +224,15 @@ h2, h3 {
     height: 100vh;
 }
 
-.portfolio-hero.natur {
+.portfolio-hero.nature {
     background-image: url('../images/1920/DJI_0900.JPG.webp');
 }
 
-.portfolio-hero.events {
+.portfolio-hero.event {
     background-image: url('../images/1920/DJI_0661.JPG.webp');
 }
 
-.portfolio-hero.eiendom {
+.portfolio-hero.property {
     background-image: url('../images/1920/DJI_0152.JPG.webp');
 }
 
@@ -245,17 +245,17 @@ h2, h3 {
     transform: translateX(-50%) translateY(-50%);
 }
 
-.portfolio-hero.natur h2 {
+.portfolio-hero.nature h2 {
     top: 52vh;
     left: 50%;
 }
 
-.portfolio-hero.events h2 {
+.portfolio-hero.event h2 {
     bottom: 10vh;
     right: 5%;
 }
 
-.portfolio-hero.eiendom h2 {
+.portfolio-hero.property h2 {
     top: 10vh;
     left: 15%;
 }
@@ -269,8 +269,7 @@ h2, h3 {
 
 .image-series__image {
     object-fit: cover;
-    height: 200px;
-    max-width: 250px;
+    max-height: 300px;
     cursor: pointer;
 }
 
