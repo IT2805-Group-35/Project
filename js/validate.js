@@ -30,7 +30,7 @@ function validation_mail()
 
 function validation_tlf()
 {
-    var form_2 = document.getElementById("form_2");
+    var form_2 = document.getElementById("form");
     var telephone = document.getElementById("telephone").value;
     var text_2 = document.getElementById("text_2");
     var pattern_2 = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
@@ -62,7 +62,7 @@ function validation_tlf()
 
 function validation_name()
 {
-    var form_3 = document.getElementById("form_3");
+    var form_3 = document.getElementById("form");
     var name = document.getElementById("name").value;
     var text_3 = document.getElementById("text_3");
     var pattern_3 = /^[a-zA-Z]+ [a-zA-Z]+$/;
@@ -88,10 +88,4 @@ function validation_name()
         text_3.innerHTML = "";
         text_3.style.color = "#00ff00";
     }
-}
-submitForms = function(){
-    document.getElementById("form_1").submit();
-    document.getElementById("form_2").submit();
-    document.getElementById("form_3").submit();
-    document.getElementById("form_4").submit();
 }
