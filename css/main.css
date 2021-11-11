@@ -25,8 +25,12 @@ body {
 }
 
 #footer {
+<<<<<<< HEAD
   margin-left: 92%;
   padding: 1rem;
+=======
+    padding: 1rem;
+>>>>>>> 86a9a80616eda82b9688178576c456100940f54b
 }
 
 #footer a {
@@ -202,7 +206,7 @@ h2, h3 {
     margin-top: 7rem;
 }
 
-@media screen and (max-width:50rem) {
+@media screen and (max-width:576px) {
     .separator {
         display: none;
     }
