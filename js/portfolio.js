@@ -1,3 +1,10 @@
+/*
+ * This file is used to render image series and bind these to lightboxes so you can click on images
+ * and view them in full screen views. It contains lightbox options and lists of images to be rendered.
+ * 
+ * It is used by portfolio.html, but could be used anywhere.
+ */
+
 // Thumbnail and image paths
 const imageOptions = {
     imagePath: 'images/1920/',
