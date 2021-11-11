@@ -56,7 +56,7 @@ Video background
  */
 const videoSources = [
     {
-        url: "https://folk.ntnu.no/joakilan/webtek-video/webtek.webm",
+        url: "https://folk.ntnu.no/joakilan/webtek-video/webtek2.webm",
         type: "video/webm",
     },
 ];
@@ -112,6 +112,7 @@ function videoBackground() {
     video.loop = true;
     video.muted = true;
     video.controls = false;
+    video.poster = videoFallbackImage.src;
     videoSources.forEach(source => {
         const node = document.createElement('source');
         node.type = source.type;
