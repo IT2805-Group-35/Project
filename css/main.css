@@ -569,7 +569,7 @@ textarea[type=text]{
     display: block;
     float: left;
     padding-right: 4rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 p#droner {
   position: absolute;
@@ -649,7 +649,7 @@ border-radius: 5px;
 position: absolute;
 width: 100%;
 height: 900px;
-left: 0px;
+left: 0;
 top: 1600px;
 
 background: #1A232C;
@@ -661,7 +661,7 @@ height: 400px;
 left: 1050px;
 top: 180px;
 
-font-family: Merriweather;
+font-family: 'Merriweather', serif;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
