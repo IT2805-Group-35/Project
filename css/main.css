@@ -156,9 +156,18 @@ q {
     padding-top: 5rem;
 }
 
+.column.wide {
+    min-width: 60%;
+    margin: auto;
+}
+
 h2, h3 {
     font-family: "Lato", sans-serif;
     font-weight: lighter;
+}
+
+#priceEstimate {
+    font-size: x-large;
 }
 
 #header-1 {
