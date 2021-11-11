@@ -5,7 +5,7 @@ const imageOptions = {
 
 const naturePhotos = [
     { 
-        'src': 'DJI_0660.JPG',
+        'src': 'DJI_0660.JPG.webp',
         'description' : 'Bilde 1: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
@@ -17,7 +17,7 @@ const naturePhotos = [
         'description' : 'Bilde 6: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0262.JPG',
+        'src': 'DJI_0262.JPG.webp',
         'description' : 'Bilde 5: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
@@ -40,7 +40,7 @@ const eventPhotos = [
         'description' : 'Bilde 2: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0004.JPG',
+        'src': 'DJI_0004.JPG.webp',
         'description' : 'Bilde 3: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
@@ -63,11 +63,11 @@ const propertyPhotos = [
         'description' : 'Bilde 1: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0262.JPG',
+        'src': 'DJI_0262.JPG.webp',
         'description' : 'Bilde 2: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0463.JPG',
+        'src': 'DJI_0463.JPG.webp',
         'description' : 'Bilde 3: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
