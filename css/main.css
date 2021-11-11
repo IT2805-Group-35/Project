@@ -543,18 +543,12 @@ p#droner {
   height: 255px;
   right: 10px;
   top: 503px;
-
-<<<<<<< HEAD
-  font-family: Lato, sans-serif;
-=======
   font-family: 'Lato', sans-serif;
->>>>>>> 9f391489efd78c37329389b19bc2d4a14a92eb06
   font-style: normal;
   font-weight: 300;
   font-size: 75px;
   line-height: 150px;
   text-align: center;
-
   color: #FFFFFF;
 }
 p#utstyr {
