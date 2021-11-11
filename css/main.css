@@ -544,7 +544,11 @@ p#droner {
   right: 10px;
   top: 703px;
 
+<<<<<<< HEAD
+  font-family: Lato, sans-serif;
+=======
   font-family: 'Lato', sans-serif;
+>>>>>>> 9f391489efd78c37329389b19bc2d4a14a92eb06
   font-style: normal;
   font-weight: 300;
   font-size: 75px;
@@ -552,4 +556,77 @@ p#droner {
   text-align: center;
 
   color: #FFFFFF;
+}
+p#utstyr {
+  position: absolute;
+  width: 289px;
+  height: 100px;
+  left: 165px;
+  top: 1109px;
+
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+
+  color: #white;
+}
+p#dronetekst {
+position: absolute;
+width: 400px;
+height: 465px;
+left: 120px;
+top: 1220px;
+
+font-family: Lato, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 23px;
+
+color: #000000;
+}
+
+#dronenavn {
+  position: absolute;
+width: 222px;
+height: 52px;
+left: 200px;
+font-family: Lato, sans-serif;
+font-size: 48px;
+line-height: 43px;
+color: #FFFFFF;
+}
+#droneseparator {
+  position: relative;
+  width: 301px;
+  height: 33px;
+  left: 157px;
+  top: 20px;
+
+
+  background: rgba(64, 83, 27, 0.4);
+}
+
+img.droneutstyr {
+position: absolute;
+width: 700px;
+height: 400px;
+left: 1100px;
+top: 1109px;
+
+background: url(.jpg);
+border-radius: 5px;
+}
+
+#utstyrbakgrunn {
+  position: absolute;
+width: 100%;
+height: 1000px;
+left: 0px;
+top: 1600px;
+
+background: #1A232C;
 }
