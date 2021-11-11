@@ -32,6 +32,10 @@ body {
     min-width: 100%;
 }
 
+video[poster] {
+    object-fit: cover;
+}
+
 header {
     /*padding: 10% 5rem 0 10%;*/
     height: 100vh;
