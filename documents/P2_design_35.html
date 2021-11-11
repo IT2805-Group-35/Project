@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project group 35</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="content">
+
+  <header>
+    <h1>IT2805. P2 Project Design. Creating a website for Johansen Luftfoto.</h1>
+  </header>
+
+  <section id="authors">
+    <h6>Authors (in alphabetical order):</h6><br>
+    Ingvild Musdalslien Kvisle<br>
+    Joakim Skogø Langvand<br>
+    Kjetil Odden<br>
+    Ole Tobias Strøm<br>
+    Bjørnar Glomset Vikhagen<br>
+    <br>
+    <time>October 7th, 2021</time>
+  </section>
+
+  <section>
+    <header>
+      <h2>Administrative details</h2>
+    </header>
+
+    <p>
+      Our client is Kjell-Inge Johansen. He is a friend of Ingvild in the group, and they met playing the Ingress mobile
+      game.
+    </p>
+
+    <p>
+      Kjell-Inge is a truck driver, with a growing side business shooting drone footage. He would like a webpage to
+      display his cinematic drone videos and images, but also to get more drone shoot commissions.
+    </p>
+  </section>
+
+  <section>
+    <header>
+      <h2>Purpose, Goals and Audience</h2>
+    </header>
+
+    <p>
+      Our client uses social media to share his drone photography hobby and has garnered a substantial following.
+      The interest in his work has created opportunities where he has filmed and photographed objects in a professional setting.
+      Kjell-Inge wants our site to be both a viewing platform of his work and a site where he can sell his drone services.
+    </p>
+
+    <p>
+      The design of the site needs to be user friendly and cater to all types of clients, both companies and private individuals.
+      There is no age group or demographic Kjell-Inge wants to exclude, but the average client is most likely an adult who has the means to hire a drone photographer.
+      We therefore need to design the site to be as user friendly as possible without compromising on the showcase of Kjell-Inges work.
+    </p>
+
+    <p>
+      There may be a performance penalty to our site because of the need to showcase both photo and video which we are going to host on site.
+      We will try to reduce loading times by scaling and compressing video and pictures in order to retain usability on older platforms.
+    </p>
+
+
+  </section>
+
+  <section>
+    <header>
+      <h2>Navigation Structure</h2>
+    </header>
+
+    <p>
+      The main layout will stay consistent throughout the whole website. This includes the site header, top-level navigation and footer. The main navigation bar will be placed at the top of the site, <a href="https://www.nngroup.com/articles/find-navigation-desktop-not-hamburger">which is where most users expect to find it.</a>
+      Most users also scan from the top, which will immediately let the user know where the navigation is, as well as give some sense of the site's content. To provide an as easy to use interface as possible, and help possible customers find what they are looking for, all of the top-level navigation will be visible, and not hidden behind secondary actions (eg. drop-down menus).
+
+
+    </p>
+
+    <p>
+      The portfolio page is designed to have a gallery which lets you flip back and forth between images and videos.
+      All of these individual images and videos will not be directly reachable from every other page, hence this subsection has a more augmented linear navigation structure.
+    </p>
+
+
+    <h2>Page Layout and Appearance</h2>
+
+    <p>
+      The main layout will stay consistent throughout the whole website. This includes the site header, top-level navigation and footer.
+      The main navigation bar will be placed at the top of the site, which is where most users expect to find it.
+      Most users also scan from the top, which will immediately let the user know where the navigation is, as well as give some sense of the site's content.
+      To provide an as easy to use interface as possible, and help possible customers find what they are looking for,
+      all of the top-level navigation will be visible, and not hidden behind secondary actions (eg. drop-down menus).
+    </p>
+
+    <p>
+      The website is a place for Kjell-Inge to show off his creative work (drone videos and photographies) to potentially garner new clients for his business.
+      We believe this puts some extra pressure on us to deliver something that's not only functional, but also looks good.
+      To make an as aesthetically pleasing website as possible (without the help of a dedicated graphic designer)
+      we try to apply some simple design principles. We want to stay as consistent as possible across all pages,
+      and we also want strict spacing and alignment, so we opt for a css grid system.
+    </p>
+
+    <p>
+      Following are the common design elements across the whole website:
+      <ul>
+    <li>  Color Palette: We have created a color palette inspired by Kjell-Inges beautiful nature photography. We wanted something that accentuates his photography, without overshadowing it. <br>
+    The site will have two different background colors: #1A232C (dark blue) and #FFFFFF (white). The dark blue color is picked from his winter birds eye photo, and from that we have created a complete palette that goes well together. </li>
+      <li>   Font colors: #000000 and #FFFFFF.
+      <br>We have chosen some secondary colors for use in highlighting text and some graphical elements. These are #FF6B00 (orange), #40531B (mossy green) and #1486AA (cyan). When used to highlight text we will add some transparency. </li>
+      <li>Header font: Lato</li>
+      <li>Body font: Merriweather</li>
+      <li>  Favicon: We have played with some designs for a favicon, but we and the client have not made a decision yet. Both concepts are based on Kjell-Inge’s virtual reality drone glasses, which he uses when controlling his drones, and we have made some sketches based on the glasses’ shape. <br>
+      The top one is a more classic looking favicon. It ties in the infinity symbol, but still hints towards the shape of the glasses. We think this clean and simple design will suit a professional technology website well. <br>
+    The lower favicon draft has a more playful design. Kjell-Inge is a person with a lot of humor and jokes, and we wanted to create something that matches his bubbly personality. <br>
+  Of course these are drafts that will be discussed more thoroughly with our client.</li>
+  <img src="images/favicon.png" alt="favicon">
+  <li>Header/navbar</li>
+  <img src="images/header.png" alt="header">
+<br>The navbar is minimalistic, and it has no background or border. The font color differs depending on the background, as some pages use background images, and some don’t. Darker backgrounds use #FFFFFF as the font color, lighter background use #000000. A line highlights the current top-level page. When the favicon design is complete, it will be featured on the left of the navbar and used as a home button.
+<li>Footer</li>
+<img src="images/footer.png" alt="footer">
+<br>The footer is also minimalistic, with no background or border of its own, and changing font color in the same way as the header/navbar.
+    </ul>
+
+  </section>
+
+
+    <h2>Content</h2>
+
+    <h3>1. Homepage-index.html</h3>
+
+    <p>
+      This is the page that potential clients and others first will encounter and must showcase Kjell-Inges work in a professional manner.
+      It will have video of his drone work playing in the background showing a number of different videos edited together in a loop.
+      It will have an alternate image that browsers and/or devices that do not support our formats.
+    </p>
+
+    <p>
+    The emphasis of this site is to give an impression the quality of Kjell-Inges work as well as giving the user routes to other parts of the site and in turn Kjell-Inges business and “art”.
+    The page is deliberately simple in order to make the user decide where to go next. We have also included a row of buttons and a drone logo on the top to further.
+    </p>
+    <img src="images/1.png" alt="1">
+
+    <p>As the user scrolls down there is info about Kjell Inges work as a drone pilot and a link to the form where the user can contact Kjell Inge if the user wants information about
+      booking or just wants to talk about drones.
+    </p>
+
+    <img src="images/2.png" alt="2">
+
+    <p>As we scroll further down we have a portion that has links to Kjell-Inges portfolio in three categories.</p>
+    <img src="images/3.png" alt="3">
+
+    <p>When we arrive at the bottom of the home page there is an option to book an appointment and also a mirror of the links we find at the upper part of the page. </p>
+
+    <img src="images/4.png" alt="4">
+
+    <h3>2. Om Johansen luftfoto - about.html</h3>
+    <p>
+  The about.html site introduces Kjell-Inge and gives context to his work.
+  The main goal of this page is to inform the user who he is and why he started his drone business. We have a picture of Kjell-Inge on the left and contact info in a bar further down.
+    </p>
+
+    <p>The design of the first page continues here and gives the user a sense of the universal design used both on this page and the rest of the site.
+    It gives the user a sense that this is all part of the same design philosophy and thus give the user a sense of professionalism.
+    The picture of Kjell-Inge will have straight cut borders like other elements on the site and will be 454x632 px.
+    The image will not be noticeably compressed in order to showcase Kjell-Inges work, but it should not be a problem for modern devices to handle.
+    All in all it should be one of the faster loading sites on the page.
+    </p>
+
+
+
+  <img src="images/5.png" alt="5">
+
+  <h3>FAQ - faq.html</h3>
+  <p>There are often issues or questions regarding the legality of drone flying and recording. Drones are also a fairly new invention and many people may have questions regarding safety and so on.
+    This page will try to best answer miscellaneous questions regarding drones and Kjell-Inges services. </p>
+
+    <img src="images/13.png" alt="13">
+
+    <h3>3. Contact.html</h3>
+
+    <p>The page is accessed by pressing the button in the top bar from anywhere on the site and makes it possible for anyone to come in contact with Kjell-Inge with both
+      business enquiries and other responses to his work. There will also be links to social media platforms where he posts more personal pictures as well as his drone videos and pictures.
+      There will be an option to contact him with an e-mail link further down on the page as well as a physical adress that is acessable from any page. </p>
+
+      <img src="images/6.png" alt="6">
+
+      <h3>4. Priser og tjenester - services_and_prices.html</h3>
+
+      <p>This page will give the potential client an overview of Kjell-Inges prices and what the different services include. The main goal of this page is to give the viewer a sense of where the price range is and what types of services he can offer for an estimated price.
+        The site will be fairly easy to load because of the lack of pictures.
+        It will be a longer list and possible to scroll further down on the page to discover other services.</p>
+        <img src="images/14.png" alt="14">
+
+        <h3>5. Drone og kamera - drones_and_cameras.html</h3>
+
+        <p>This page is meant for people interested in the drones that Kjell-Inge uses while filming and taking pictures.
+          The pictures pop out if you click on them for further examination.
+          There is also a link to book an appointment if the user was looking for a specific drone or drone specification. </p>
+
+          <img src="images/7.png" alt="7">
+
+          <img src="images/8.png" alt="8">
+
+        <h3>6. Regler og betingelser - services_and_prices.html</h3>
+
+
+        <h3>7. Portfølje - portfolio.html</h3>
+
+        <p>This is the most extensive site on our page and is meant to showcase the possibilities of what Kjell-Inge offer.
+          It has three different subcategories, “natur” “events'' and “eiendom”, where the user can press each category to scroll further down the page or simply scroll without pressing a button.
+          There will be a gallery categorized in the three subcategories where the page viewer can access samples of the work in both video and picture form.
+        </p>
+
+        <p>The pictures on the top will adjust to the size of the user's browser window to give a sense of the scale of Kjell-Inges work.
+          The design here is also very much in line with the design of the other pages but differs in that the buttons link further down on the page and not to another page.
+        </p>
+
+          <img src="images/9.png" alt="9">
+
+          <p>When “natur” is pressed the viewer will auto scroll down to the page which showcases the more nature oriented work of Kjell-Inge.
+            If pressed, the pictures link to a picture and video viewer where the user can view the media Kjell-Inge wants to showcase.
+            Book oppdrag links to the contact site where the user can consult as to what to do.
+            There is also information about the events he can do in the same vein as “natur” and videos.
+          </p>
+
+          <p>Further down it is a category called “eiendom” with the same layout and universal design language as the rest of the site.
+            The “se mer” button accesses the gallery of photos in the portfolio part of the page.
+            There are also navigation buttons at the bottom of the page and a button that takes the user to the top in order to alleviate scrolling fatigue.
+          </p>
+
+          <img src="images/10.png" alt="10">
+          <img src="images/11.png" alt="11">
+          <img src="images/12.png" alt="12">
+
+
+
+  <section>
+    <header>
+      <h2>Javascript:</h2>
+    </header>
+
+    <b>Our four different javascript applications are as follows:</b>
+
+    <ol>
+      <li>
+      A simple template/module implementation, to allow for the reuse of site components such as the header, footer and navigation.
+      </li>
+
+      <li>
+        An image carousel/gallery application, to enhance the portfolio section of the website. Rather than a static vertical list of photos and videos, we want a more creative and dynamic way to show off Kjell-Inges work. Fullscreen viewing without opening a new page, navigation between images or videos in fullscreen mode, showcasing a few selected images or videos in a larger carousel format are some of the features considered. Time will constrain the scope of this application, and it’s hard to estimate which features are feasible to implement.
+      </li>
+
+      <li>
+        A return to top button, which will only display after the user has scrolled a certain amount, and moves the viewport back to the top.
+      </li>
+
+      <li>
+        A script which validates form input.
+      </li>
+    </ol>
+
+  </section>
+
+  <section>
+    <header>
+      <h2>Plan:</h2>
+    </header>
+
+  <p>These are the files and folders we will have to create or receive from the client to complete the project. There is still some uncertainty
+    regarding photos and videos from our client, how many we are going to use, and so forth. Hence a generic representation of where they will be stored is included.
+  </p>
+
+  <p>We will use the following organizational scheme, and the files will be located inside %folder_name%:</p>
+
+    <ul>
+      <li>
+      index.html
+      </li>
+
+      <li>
+      about.html
+      </li>
+
+      <li>
+      contact.html
+      </li>
+
+      <li>
+      drones_and_cameras.html
+      </li>
+
+      <li>
+        services_and_prices.html
+      </li>
+
+      <li>
+        terms_of_services.html
+      </li>
+      <li>
+        portfolio.html
+      </li>
+
+      <li>
+        /assets
+          <ul>
+            <li>images</li>
+          <ul>
+              <li>favico.png</li>
+              <li>logo.png</li>
+              <li>dronepic1.jpg</li>
+              <li>dronepic1.jpg</li>
+              <li>...</li>
+              <li>dronepic99.jpg</li>
+            </ul>
+          </ul>
+
+          <ul>
+            <li>videos/</li>
+          <ul>
+              <li>dronevid1.mp4</li>
+              <li>dronevid2.mp4</li>
+              <li>...</li>
+              <li>dronevid99.mp4</li>
+            </ul>
+          </ul>
+
+          <ul>
+            <li>partials//</li>
+          <ul>
+              <li>header.html</li>
+              <li>footer.html</li>
+
+            </ul>
+          </ul>
+
+          <li>
+            /scripts
+              <ul>
+                  <li>modular.js</li>
+                  <li>portfolio.js</li>
+                  <li>return.js</li>
+                  <li>dronepic1.jpg</li>
+                  <li>...</li>
+                  <li>validate.js</li>
+              </ul>
+
+          <li>
+            style.css </li>
+
+        </ul>
+
+      </li>
+
+
+    <p>Below we have the work division of all the files we will need to create ourselves. All files have assigned a person who is responsible for development of
+      that particular file, before the specified deadline. The deadlines are spaced so that the main structure is completed first, the generic pages in the second, and the javascript last.</p>
+
+      <p>This leaves us with two weeks for testing and finalization before the project deadline, 11.11.2021.</p>
+
+
+
+
+  </section>
+
+  <table style="width:100%">
+    <tr>
+      <th>Filename</th>
+      <th>Description</th>
+      <th>Assignee</th>
+      <th>Deadline</th>
+    </tr>
+    <tr>
+      <td>index.html</td>
+      <td>Homepage</td>
+      <td>Joakim, Ingvild</td>
+      <td>21.10.2021</td>
+    </tr>
+    <tr>
+      <td>_header.html</td>
+      <td>Header. Will be injected into all other pages.</td>
+      <td>Bjørnar</td>
+      <td>21.10.2021</td>
+    </tr>
+  	<tr>
+       <td>_footer.html</td>
+      <td>Footer. Will be injected into all other pages.</td>
+      <td>Bjørnar</td>
+      <td>21.10.2021</td>
+    </tr>
+
+   <tr>
+       <td>style.css</td>
+      <td>The styling for the whole site..</td>
+      <td>Everyone</td>
+      <td>21.10.2021</td>
+    </tr>
+
+  <tr>
+       <td>about.html</td>
+      <td>Information page.</td>
+      <td>Ingvild</td>
+      <td>25.10.2021</td>
+    </tr>
+
+  <tr>
+       <td>contact.html</td>
+      <td>Contact page with form.</td>
+      <td>Bjørnar</td>
+      <td>25.10.2021</td>
+    </tr>
+
+    <tr>
+       <td>portfolio.html</td>
+      <td>Image and video gallery page.</td>
+      <td>Tobias</td>
+      <td>25.10.2021</td>
+    </tr>
+
+    <tr>
+       <td>drones_and_cameras.html</td>
+      <td>Information page.</td>
+      <td>Kjetil</td>
+      <td>25.10.2021</td>
+    </tr>
+
+    <tr>
+       <td>services_and_prices.html</td>
+      <td>Information page</td>
+      <td>Ingvild</td>
+      <td>25.10.2021</td>
+    </tr>
+
+    <tr>
+       <td>terms_of_services.html</td>
+      <td>Information page.</td>
+      <td>Kjetil</td>
+      <td>25.10.2021</td>
+    </tr>
+
+     <tr>
+       <td>modular.js</td>
+      <td>Inject common elements.</td>
+      <td>Joakim, Ingvild</td>
+      <td>28.10.2021</td>
+    </tr>
+
+
+     <tr>
+       <td>portfolio.js</td>
+      <td>Carousel / gallery / slideshow.</td>
+      <td>Tobias, Joakim</td>
+      <td>28.10.2021</td>
+    </tr>
+
+
+     <tr>
+       <td>return.js</td>
+      <td>Return to the top button.</td>
+      <td>Bjørnar</td>
+      <td>28.10.2021</td>
+    </tr>
+
+
+     <tr>
+       <td>validate.js</td>
+      <td>Form validation.</td>
+      <td>Kjetil</td>
+      <td>28.10.2021</td>
+    </tr>
+
+
+  </table>
+</div>
+
+</body>
+</html>
