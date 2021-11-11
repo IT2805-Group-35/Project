@@ -543,12 +543,7 @@ p#droner {
   height: 255px;
   right: 10px;
   top: 703px;
-
-<<<<<<< HEAD
-  font-family: Lato, sans-serif;
-=======
   font-family: 'Lato', sans-serif;
->>>>>>> 9f391489efd78c37329389b19bc2d4a14a92eb06
   font-style: normal;
   font-weight: 300;
   font-size: 75px;
@@ -571,7 +566,7 @@ p#utstyr {
   line-height: 58px;
   text-align: center;
 
-  color: #white;
+  color: white;
 }
 p#dronetekst {
 position: absolute;
@@ -617,7 +612,7 @@ height: 400px;
 left: 1100px;
 top: 1109px;
 
-background: url(.jpg);
+/*background: url(.jpg);*/
 border-radius: 5px;
 }
 
@@ -625,7 +620,7 @@ border-radius: 5px;
   position: absolute;
 width: 100%;
 height: 1000px;
-left: 0px;
+left: 0;
 top: 1600px;
 
 background: #1A232C;
@@ -637,7 +632,7 @@ height: 343px;
 left: 900px;
 top: 180px;
 
-font-family: Merriweather;
+font-family: Merriweather, serif;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
