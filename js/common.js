@@ -1,3 +1,8 @@
+/**
+ * This file is used for injecting common elements like menus and footer into
+ * the document.
+ */
+
 /*
 Top common items
  */
