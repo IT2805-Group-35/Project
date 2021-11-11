@@ -13,7 +13,7 @@ const naturePhotos = [
         'description' : 'Bilde 2: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
-        'src': 'DJI_0457.JPG.webp',
+        'src': 'DJI_0662.JPG',
         'description' : 'Bilde 6: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
@@ -84,27 +84,27 @@ const propertyPhotos = [
     },
     { 
         'src': 'DJI_0152.JPG.webp',
-        'description' : 'Bilde 1: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+        'description' : 'Bilde 7: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
         'src': 'DJI_0255.JPG.webp',
-        'description' : 'Bilde 2: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+        'description' : 'Bilde 8: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
         'src': 'DJI_0261.JPG.webp',
-        'description' : 'Bilde 3: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+        'description' : 'Bilde 9: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
         'src': 'DJI_0438.JPG.webp',
-        'description' : 'Bilde 4: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+        'description' : 'Bilde 10: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
         'src': 'DJI_0457.JPG.webp',
-        'description' : 'Bilde 5: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+        'description' : 'Bilde 11: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     },
     { 
         'src': 'DJI_0459.JPG.webp',
-        'description' : 'Bilde 6: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
+        'description' : 'Bilde 12: Ipsum ea occaecat labore officia Lorem nulla nulla mollit sint qui incididunt.'
     }
 ];
 
@@ -118,9 +118,6 @@ imageSeries('#property-photos', 3, propertyPhotos, propertyPhotosLightbox);
 
 function imageSeries(selector, displayQuantity, images, lightbox) {
     const node = document.querySelector(selector);
-    let sumOfWidths = 0;
-
-    console.log(`Width of container ${node.offsetWidth}.`)
 
     images.every((image, index) => {
         if (index >= displayQuantity) return false;
