@@ -537,6 +537,13 @@ textarea[type=text]{
     position: relative;
     left: 2%;
 }
+
+
+.social.about {
+    display: block;
+    float: left;
+    padding-right: 4rem;
+}
 p#droner {
   position: absolute;
   width: 757px;
@@ -544,7 +551,7 @@ p#droner {
   right: 10px;
   top: 703px;
 
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 75px;
