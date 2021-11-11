@@ -7,13 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <script src="js/main.js" defer></script>
-    <script src="js/common.js" defer></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
-    <header><h1 id="header-1">Kontakt</h1></header>
+    <script>
+        videoBackground();
+        insertMenu();
+    </script>
     
-    <div id="contact_body">
+    <div class="top-margin-7" id="contact_body">
         <h3 id ="contact_header" style="color: rgb(201, 201, 201);">Fyll ut kontaktskjemaet for å få et tilbud</h3>
         <form id="form" action="#">
             <div class="inputbox">
@@ -34,7 +36,7 @@
        
 
             <div class="inputbox">
-                <textarea type="text" id="your_message" name="contact_message" placeholder="Din melding" rows="10" cols="50">
+                <textarea id="your_message" name="contact_message" placeholder="Din melding" rows="10" cols="50">
                 </textarea>
             </div>
             <div>
@@ -44,6 +46,10 @@
     </div>
 
     <script src="js/validate.js">
-    </script> 
+    </script>
+
+<script>
+    insertFooter();
+</script>
 </body>
 </html>
