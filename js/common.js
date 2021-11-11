@@ -1,6 +1,7 @@
 /**
- * This file is used for injecting common elements like menus and footer into
- * the document.
+ * This file is used for injecting common elements like menus and footer into the document.
+ *
+ * The first part of this file contains data that can be easily changed when needed.
  */
 
 /*
@@ -21,7 +22,7 @@ const menuItems = [
     },
     {
         name: "Priser",
-        link: "services-and-prices.html",
+        link: "services_and_prices.html",
     },
     {
         name: "Kontakt",
@@ -48,37 +49,77 @@ const socials = [
 /*
 Footer content
  */
-const footer = document.createElement('footer');
-footer.textContent = 'Copyright © 2021 Johansen Luftfoto';
+const footerMarkup = 'Copyright © 2021 Johansen Luftfoto';
 
-const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+/*
+Video background
+ */
+const videoSources = [
+    {
+        url: "https://folk.ntnu.no/joakilan/webtek-video/webtek.webm",
+        type: "video/webm",
+    },
+];
 
-const menu = document.createElement('div');
-const menuWrapper = document.createElement('div');
-menu.id = 'menu';
-menu.style.zIndex = 1000;
-
-menuItems.forEach(item => {
-    const node = document.createElement('a');
-    node.href = item.link
-    node.textContent = item.name;
-    menu.appendChild(node);
-});
-
-socials.forEach(item => {
-    const node = document.createElement('a');
-    node.href = item.link;
-    const icon = document.createElement('img');
-    icon.src = item.icon;
-    icon.alt = item.name;
-    node.appendChild(icon);
-    menu.appendChild(node);
-});
-
-menuWrapper.appendChild(menu);
-menuWrapper.classList.add('menu-wrapper');
+const videoFallbackImage = {
+    src: "images/1920/DJI_0853.JPG.webp",
+    alt: "Video failed to load",
+};
 
 // Insert nodes
-document.body.insertBefore(menuWrapper, document.body.childNodes[0]);
-document.body.appendChild(footer);
+function insertMenu() {
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    const menu = document.createElement('div');
+    const menuWrapper = document.createElement('div');
+    menu.id = 'menu';
+    menu.style.zIndex = 1000;
+
+    menuItems.forEach(item => {
+        const node = document.createElement('a');
+        node.href = item.link
+        node.textContent = item.name;
+        menu.appendChild(node);
+    });
+
+    socials.forEach(item => {
+        const node = document.createElement('a');
+        node.href = item.link;
+        const icon = document.createElement('img');
+        icon.src = item.icon;
+        icon.alt = item.name;
+        node.appendChild(icon);
+        menu.appendChild(node);
+    });
+
+    menuWrapper.appendChild(menu);
+    menuWrapper.classList.add('menu-wrapper');
+    document.body.insertBefore(menuWrapper, document.body.childNodes[0]);
+}
+
+function insertFooter() {
+    const footer = document.createElement('footer');
+    footer.innerHTML = footerMarkup;
+
+    document.body.appendChild(footer);
+}
+
+function videoBackground() {
+    const video = document.createElement('video');
+    video.id = 'bg-video';
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.controls = false;
+    videoSources.forEach(source => {
+        const node = document.createElement('source');
+        node.type = source.type;
+        node.src = source.url;
+        video.appendChild(node);
+    });
+    const fallback = document.createElement('img');
+    fallback.src = videoFallbackImage.src;
+    fallback.alt = videoFallbackImage.alt;
+    document.body.insertBefore(video, document.body.childNodes[0]);
+};

@@ -24,7 +24,7 @@ body {
     height: 1.2rem;
 }
 
-#Landscape-Video {
+#bg-video {
     position: fixed;
     top: 0;
     z-index: -1;
@@ -43,13 +43,19 @@ header h1 {
     margin-left: 10%;
 }
 
+#arrow {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 80px);
+}
+
 footer {
     text-align: center;
     clear: both;
     padding: 2rem;
 }
 
-p {
+p, ul {
     font-family: "Merriweather", serif;
     font-weight: lighter;
     font-size: small;
@@ -189,7 +195,7 @@ h2, h3 {
 
 /*Text highlighters */
 .highlight.green {
-    background: linear-gradient(180deg, rgba(64, 83, 27, 0.4) 70%, rgba(255,255,255,0) 30%);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%,rgba(64, 83, 27, 0.4) 30%);
     display: inline;
 }
 
@@ -199,7 +205,7 @@ h2, h3 {
 }
 
 .highlight.blue {
-    background: linear-gradient(180deg, rgba(20, 134, 170, 0.4) 70%, rgba(255,255,255,0) 30%);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%,rgba(20, 134, 170, 0.4) 30%);
     display: inline;
 }
 

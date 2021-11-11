@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <title>Johansen Luftfoto</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
-    <script src="js/common.js" defer></script>
+    <script src="js/common.js"></script>
     <script src="js/index.js" defer></script>
     <script src="js/arrow.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <video autoplay loop muted id="Landscape-Video">
-        <source src="https://folk.ntnu.no/joakilan/webtek-video/webtek.webm" type="video/webm">
-        <source src="https://folk.ntnu.no/joakilan/webtek-video/webtek_test2.mp4" type="video/mp4">
-    </video>
+<script>
+    videoBackground();
+    insertMenu();
+</script>
 
-    <header><h1>
-        <span class="lighter-font">Johansen </span>
-        <span class="italic-bold-font">Luftfoto</span>
-    </h1></header>
+    <header>
+        <h1>
+            <span class="lighter-font">Johansen </span>
+            <span class="italic-bold-font">Luftfoto</span>
+        </h1>
+        <canvas id="arrow" width="160" height="120"></canvas>
+    </header>
 
     <div class="wrapper">
 
@@ -46,7 +48,7 @@
                     Nunc lacus orci, ornare sed malesuada nec, scelerisque at nunc.
                 </p>
 
-                <h3>Book meg for oppdrag!</h3>
+                <h3 class="highlight blue"><a href="contact.html" class="clean-link">Book meg for oppdrag!</a></h3>
             </div>
         </div>
 
@@ -69,7 +71,7 @@
                     I stedet for å lete i dagesvis etter forvillede dyr, kan jeg spare deg verdifull tid ved å fly opp dronene mine.
                     Ved områdesøk med drone vil man lettere få oversikt enn å gå selv.
                 </p>
-                <h3><a href="services_and_prices.html" class="clean-link">Se tilbud og priser</a></h3>
+                <h3 class="highlight blue"><a href="services_and_prices.html" class="clean-link">Se tilbud og priser</a></h3>
             </div>
         </div>
 
@@ -86,7 +88,7 @@
                     Duis eleifend eu mi a blandit. Nulla eget vulputate neque.
                     Vestibulum consequat at arcu et consequat.
                 </p>
-                <h3><a href="portfolio.html" class="clean-link">Se min portefølje</a></h3>
+                <h3 class="highlight blue"><a href="portfolio.html" class="clean-link">Se min portefølje</a></h3>
             </div>
         </div>
 
@@ -97,7 +99,7 @@
             </div>
 
             <div class="column-2">
-                <h2>Selge sykkelen?</h2>
+                <h2 class="highlight green">Selge sykkelen?</h2>
                 <p>
                     Skal du selge:
                 </p>
@@ -112,9 +114,13 @@
                     Jeg tar flotte bilder både med og uten drone.
                     Se mine priser og tilbud - book meg for blinkskuddet du trenger for et vellykket salg!
                 </p>
-                <h3><a href="services_and_prices.html" class="clean-link">Se tilbud og priser</a></h3>
+                <h3 class="highlight blue"><a href="services_and_prices.html" class="clean-link">Se tilbud og priser</a></h3>
             </div>
         </div>
     </div>
+
+<script>
+    insertFooter();
+</script>
 </body>
 </html>

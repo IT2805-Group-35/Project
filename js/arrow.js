@@ -22,6 +22,3 @@ function drawArrow(X0, Y0, X1, Y1, X2, Y2, X3, Y3, X4, Y4, X5, Y5) {
 }
 
 drawArrow(40, 70, 80, 90, 120, 70, 120, 60, 80, 80, 40, 60);
-
-
-
