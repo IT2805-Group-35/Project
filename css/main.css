@@ -67,6 +67,10 @@ header h1 {
     margin-left: 10%;
 }
 
+.h1-page {
+    font-family: 'Lato', sans-serif;
+}
+
 #arrow {
     position: absolute;
     bottom: 0;
@@ -93,6 +97,10 @@ q {
 .quote-author {
     text-align: right;
     margin-right: 2rem;
+}
+
+.quote-author:before {
+    content: "— ";
 }
 /*Header part 1 */
 .lighter-font {
@@ -556,6 +564,7 @@ textarea[type=text]{
     display: block;
     float: left;
     padding-right: 4rem;
+    padding-top: 4rem;
 }
 p#droner {
   position: absolute;
@@ -585,7 +594,7 @@ p#utstyr {
   line-height: 58px;
   text-align: center;
 
-  color: #white;
+  color: white;
 }
 p#dronetekst {
 position: absolute;
