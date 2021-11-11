@@ -89,11 +89,10 @@ const videoFallbackImage = {
     alt: "Video failed to load",
 };
 
-// Insert nodes
+/**
+ * Insert menubar into document. The menubar will be placed as the first node in the body.
+ */
 function insertMenu() {
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
-
     const menu = document.createElement('div');
     const menuWrapper = document.createElement('div');
     menu.id = 'menu';
@@ -121,6 +120,10 @@ function insertMenu() {
     document.body.insertBefore(menuWrapper, document.body.childNodes[0]);
 }
 
+/**
+ * Insert footer into the document. The function should be called after all other nodes
+ * has been placed to unsure it's placed at the end of the document.
+ */
 function insertFooter() {
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
   const windowWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -137,11 +140,13 @@ function insertFooter() {
       menu.appendChild(node);
   });
 
-
   menuWrapper.appendChild(menu);
   document.body.appendChild(menuWrapper);
 }
 
+/**
+ * Use a video as background. The video will fill the entire page (scales as needed).
+ */
 function videoBackground() {
     const video = document.createElement('video');
     video.id = 'bg-video';
