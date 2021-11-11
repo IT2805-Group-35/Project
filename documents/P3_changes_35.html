@@ -45,10 +45,71 @@
             <h2>Changes we have made</h2>
         </header>
 
+        <h3>Changes to about.html:</h3>
         <p>
-            Testing Document: A brief summary of the questionnaire you send out to testers, as
-            well as the link to the Google Form you used. Don't forget to ask your client to test
-            the website.
+            About has not been changed all too much from the draft in p2.
+            The highlighters have been changed throughout the whole site, as we saw that it looked cleaner and better to have a highlighter on the lower part of the text, rather than the top.
+            In the draft we included the telephone number, email and instagram-tag beside the social icons at the bottom of the page, but here we decided it looked better without the text. The
+        </p>
+
+        <h3>Changes made to contact.html</h3>
+        <p>
+            The changes made to contact.html are in that some of the repetitive elements like facebook and instagram links were not present twice because we felt that it was too repetitive. We also decided that it wasn't necessary to list the owner's telephone number because it was his private number. This is something he can change at a later date.
+        </p>
+
+        <h3>Changes to drones_and_cameras.html</h3>
+
+        <h3>Changes to index.html</h3>
+
+        <p>
+            The index is quite similar to the draft.
+            We wanted to display a video in the background, which we succeeded with.
+            We added a third “infobox” with information aimed at people selling cars, houses and alike.
+        </p>
+
+        <h3>Changes to portfolio.html:</h3>
+
+        <p>
+            Portfolio.html didn’t change much from the design.
+            Some differences to font sizes, minor placement changes of text and images.
+            The major difference from the design description is the support for videos in the same way as images.
+            It displays a full width video, but the image series created by portfolio.js and lightbox.js fullscreen view does not support videos.
+            In addition the video player in the design had custom controls, and these were not implemented.
+        </p>
+
+        <h3>Changes to Portfolio.js:</h3>
+
+        <p>
+            Originally portfolio.js was the javascript for all the portfolio / gallery / carousel functionality.
+            It was split into two files, portfolio.js and lightbox.js. Portfolio.js houses lists of images, setup variables for lightbox.js and functionality to render images to portfolio.html and bind these images so that clicking on them opens a lightbox.
+        </p>
+
+        <h3>Changes to lightbox.js:</h3>
+
+        <p>
+            Originally lightbox.js was a part of portfolio.js. With the goal of enhancing the way the website can showcase Kjell-Inges photos and videos, there was a bit of uncertainty of what this functionality would look like. It was uncertain how hard this functionality would be to implement as well.
+
+            Lightbox.js ended up being a fullscreen image viewer. It opens by calling a javascript function and it takes up the whole viewport, hiding everything else. It takes in a set of images in a javascript list of objects. Each object contains an image filename and an image description. It displays one large image on top, and all the other images are displayed as thumbnails at the bottom in a horizontal list. The active thumbnail is highlighted and brought to the left of the list. Users can navigate left and right, either using buttons on the website, or the keyboard arrow keys, or click any thumbnail to set it as the active one. Users can exit the lightbox by pressing escape or clicking the exit button in the top right. It also has two features to show how many images there are in total, as well as showing where in the set you currently are: a bar at the bottom and text at the top. It was supposed to support videos, but time constraints and other features were prioritized.
+        </p>
+
+        <h3>Changes made to validate.js:</h3>
+        <p>
+            The form were in the beginning supposed to be used to validate just some of the information written in the contact.html form.
+            We also decided that it was better to not lock out user who did not write a proper telephone number.
+            Thus we decided that is was better to suggest what the user were supposed to write instead of locking the user out of sending the form.
+        </p>
+
+        <h3>Changes made to services_and_prices.html</h3>
+
+        <p>
+            The prices and services-page has changed quite a bit. The old version felt a bit boring and bland, so more of the design elements from index and others were used, including the separators and highlighters.
+            We also added a price calculator so that users can get a price estimate. We were initially a bit unsure whether this was useful for Kjell-Inge, but this way, he can decide if he wants to keep it or not.
+        </p>
+
+        <h3>Changes made to terms_of_services.html</h3>
+        <p>
+            The Terms of Services is not changed in particular,
+            and it is strictly an infopage made for people who want more information on how the site functions.
         </p>
 
     </section>
@@ -64,43 +125,50 @@
         </p>
 
         <ul>
-            <li>css</li>
-            <ul>
-                <li>main.css</li>
-            </ul>
+            <li>css
+                <ul>
+                    <li>main.css</li>
+                </ul>
+            </li>
 
-            <li>icons</li>
-            <ul>
-                <li>call_black_36dp.svg</li>
-                <li>email_black_36dp.svg</li>
-                <li>facebook.svg</li>
-                <li>facebook-f.svg</li>
-                <li>facebook-messenger.svg</li>
-                <li>facebook-square.svg</li>
-                <li>instagram.svg</li>
-                <li>instagram-square.svg</li>
-            </ul>
+            <li>icons
+                <ul>
+                    <li>call_black_36dp.svg</li>
+                    <li>email_black_36dp.svg</li>
+                    <li>facebook.svg</li>
+                    <li>facebook-f.svg</li>
+                    <li>facebook-messenger.svg</li>
+                    <li>facebook-square.svg</li>
+                    <li>instagram.svg</li>
+                    <li>instagram-square.svg</li>
+                </ul>
+            </li>
 
-            <li>images/</li>
+            <li>images/
             <ul>
-                <li>1920/</li>
-                <ul>
-                    <li>DJI_0004.JPG.webp</li>
-                    <li>...</li>
-                    <li>DJI_0905.JPG.webp</li>
-                </ul>
-                <li>full/</li>
-                <ul>
-                    <li>DJI_0004.JPG.webp</li>
-                    <li>...</li>
-                    <li>DJI_0905.JPG.webp</li>
-                </ul>
-                <li>thumbs/</li>
-                <ul>
-                    <li>DJI_0004.JPG.webp</li>
-                    <li>...</li>
-                    <li>DJI_0905.JPG.webp</li>
-                </ul>
+                <li>1920/
+                    <ul>
+                        <li>DJI_0004.JPG.webp</li>
+                        <li>...</li>
+                        <li>DJI_0905.JPG.webp</li>
+                    </ul>
+                </li>
+                <li>full/
+                    <ul>
+                        <li>DJI_0004.JPG.webp</li>
+                        <li>...</li>
+                        <li>DJI_0905.JPG.webp</li>
+                    </ul>
+                </li>
+
+                <li>thumbs/
+                    <ul>
+                        <li>DJI_0004.JPG.webp</li>
+                        <li>...</li>
+                        <li>DJI_0905.JPG.webp</li>
+                    </ul>
+                </li>
+
                 <li>cow.webp</li>
                 <li>droneforside.jpg</li>
                 <li>facebook.png</li>
@@ -109,21 +177,25 @@
                 <li>motorcycle.webp</li>
                 <li>snowy-scenery.webp</li>
             </ul>
-            <li>js/</li>
-            <ul>
-                <li>arrow.js</li>
-                <li>common.js</li>
-                <li>index.js</li>
-                <li>lightbox.js</li>
-                <li>portfolio.js</li>
-                <li>pricecalculator.js</li>
-                <li>validate.js</li>
-            </ul>
+            </li>
 
-            <li>video/</li>
-            <ul>
-                <li>webtek2.webm</li>
-            </ul>
+            <li>js/
+                <ul>
+                    <li>arrow.js</li>
+                    <li>common.js</li>
+                    <li>index.js</li>
+                    <li>lightbox.js</li>
+                    <li>portfolio.js</li>
+                    <li>pricecalculator.js</li>
+                    <li>validate.js</li>
+                </ul>
+            </li>
+
+            <li>video/
+                <ul>
+                    <li>webtek2.webm</li>
+                </ul>
+            </li>
 
             <li>about.html</li>
             <li>contact.html</li>
@@ -146,105 +218,109 @@
               <th>Filename</th>
               <th>Description</th>
               <th>Assignee</th>
-              <th>Deadline</th>
             </tr>
             <tr>
               <td>index.html</td>
-              <td>Homepage</td>
+              <td>The homepage/frontpage</td>
               <td>Joakim, Ingvild</td>
-              <td>21.10.2021</td>
             </tr>
             <tr>
               <td>_header.html</td>
-              <td>Header. Will be injected into all other pages.</td>
-              <td>Bjørnar</td>
-              <td>21.10.2021</td>
+              <td>Instead written as a function insertMenu() in common.js.</td>
+              <td>Joakim</td>
             </tr>
             <tr>
                <td>_footer.html</td>
-              <td>Footer. Will be injected into all other pages.</td>
+              <td>Instead written as a function insertFooter() in common.js</td>
               <td>Bjørnar</td>
-              <td>21.10.2021</td>
             </tr>
 
            <tr>
                <td>style.css</td>
               <td>The styling for the whole site..</td>
               <td>Everyone</td>
-              <td>21.10.2021</td>
             </tr>
 
           <tr>
                <td>about.html</td>
-              <td>Information page.</td>
+              <td>An information page about Kjell-Inge and his background as a photographer.</td>
               <td>Ingvild</td>
-              <td>25.10.2021</td>
             </tr>
 
           <tr>
                <td>contact.html</td>
-              <td>Contact page with form.</td>
+              <td>A convenient way to contact the page owner.</td>
               <td>Kjetil</td>
-              <td>25.10.2021</td>
             </tr>
 
             <tr>
                <td>portfolio.html</td>
               <td>Image and video gallery page.</td>
               <td>Tobias</td>
-              <td>25.10.2021</td>
             </tr>
 
             <tr>
                <td>drones_and_cameras.html</td>
-              <td>Information page.</td>
-              <td>Bjørnar</td>
-              <td>25.10.2021</td>
+              <td>Information page about drones currently used by Kjell-Inge</td>
+              <td>Kjetil</td>
+            </tr>
+
+            <tr>
+                <td>terms_of_services.html</td>
+                <td>Infopage about Kjell-Inge’s terms and services.</td>
+                <td>Kjetil</td>
             </tr>
 
             <tr>
                <td>services_and_prices.html</td>
-              <td>Information page</td>
+              <td>
+                  Infopage about different services and prices.
+                  Also includes a calculator for the user to get a price estimate.
+              </td>
               <td>Ingvild</td>
-              <td>25.10.2021</td>
             </tr>
 
             <tr>
-               <td>terms_of_services.html</td>
-              <td>Information page.</td>
-              <td>Kjetil</td>
-              <td>25.10.2021</td>
+                <td>arrow.js</td>
+                <td>
+                    A small graphical element to aid the user in navigating the website.
+                    Created with canvas.
+                </td>
+                <td>Ingvild</td>
             </tr>
 
-             <tr>
-               <td>modular.js</td>
-              <td>Inject common elements.</td>
-              <td>Joakim, Ingvild</td>
-              <td>28.10.2021</td>
+            <tr>
+                <td>common.js</td>
+                <td>
+                    Used for injecting common elements like menus and footer into the document.
+                </td>
+                <td>Joakim</td>
             </tr>
 
-
-             <tr>
-               <td>portfolio.js</td>
-              <td>Carousel / gallery / slideshow.</td>
-              <td>Tobias, Joakim</td>
-              <td>28.10.2021</td>
+            <tr>
+                <td>lightbox.js</td>
+                <td>Fullscreen image viewer.</td>
+                <td>Tobias</td>
             </tr>
 
-
-             <tr>
-               <td>return.js</td>
-              <td>Return to the top button.</td>
-              <td>Bjørnar</td>
-              <td>28.10.2021</td>
+            <tr>
+                <td>portfolio.js</td>
+                <td>Inserts images onto the portfolio page and links the images to the lightbox.</td>
+                <td>Tobias</td>
             </tr>
 
+            <tr>
+                <td>pricecalculator.js</td>
+                <td>A price calculator that lets the user get a price estimate for a photography commission.
+                    The price is calculated from the amount of hours, whether the user wants photos, videos, videos and photos, and prints in addition to digital copies of the photos.
+                </td>
+                <td>Ingvild</td>
+            </tr>
 
              <tr>
                <td>validate.js</td>
-              <td>Form validation.</td>
+              <td>A validator to give the user feedback on information written in contact.html</td>
               <td>Kjetil</td>
-              <td>28.10.2021</td>
             </tr>
         </table>
     </section>
