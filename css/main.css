@@ -561,7 +561,7 @@ p#utstyr {
   position: absolute;
   width: 289px;
   height: 100px;
-  left: 165px;
+  left: 245px;
   top: 1109px;
 
   font-family: Lato, sans-serif;
@@ -577,7 +577,7 @@ p#dronetekst {
 position: absolute;
 width: 400px;
 height: 465px;
-left: 120px;
+left: 200px;
 top: 1220px;
 
 font-family: Lato, sans-serif;
@@ -593,7 +593,7 @@ color: #000000;
   position: absolute;
 width: 222px;
 height: 52px;
-left: 200px;
+left: 290px;
 font-family: Lato, sans-serif;
 font-size: 48px;
 line-height: 43px;
@@ -603,7 +603,7 @@ color: #FFFFFF;
   position: relative;
   width: 301px;
   height: 33px;
-  left: 157px;
+  left: 237px;
   top: 20px;
 
 
@@ -629,4 +629,19 @@ left: 0px;
 top: 1600px;
 
 background: #1A232C;
+}
+#dronebeskrivelse {
+  position: absolute;
+width: 782px;
+height: 343px;
+left: 900px;
+top: 180px;
+
+font-family: Merriweather;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+
+color: #FFFFFF;
 }
