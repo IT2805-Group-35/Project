@@ -30,6 +30,29 @@ const menuItems = [
     },
 ];
 
+const footerItems = [
+    {
+        name: "Forside",
+        link: "index.html",
+    },
+    {
+        name: "Om meg",
+        link: "about.html",
+    },
+    {
+        name: "Portfolio",
+        link: "portfolio.html",
+    },
+    {
+        name: "Priser",
+        link: "services_and_prices.html",
+    },
+    {
+        name: "Kontakt",
+        link: "contact.html",
+    },
+];
+
 /*
 Social network links and icons
  */
@@ -76,7 +99,7 @@ function insertMenu() {
     menu.id = 'menu';
     menu.style.zIndex = 1000;
 
-    menuItems.forEach(item => {
+    footerItems.forEach(item => {
         const node = document.createElement('a');
         node.href = item.link
         node.textContent = item.name;
@@ -99,10 +122,24 @@ function insertMenu() {
 }
 
 function insertFooter() {
-    const footer = document.createElement('footer');
-    footer.innerHTML = footerMarkup;
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  const windowWidth = window.innerWidth || document.documentElement.clientWidth;
 
-    document.body.appendChild(footer);
+  const menu = document.createElement('div');
+  const menuWrapper = document.createElement('div');
+  menu.id = 'footer';
+  menu.style.zIndex = 1000;
+
+  footerItems.forEach(item => {
+      const node = document.createElement('a');
+      node.href = item.link
+      node.textContent = item.name;
+      menu.appendChild(node);
+  });
+
+
+  menuWrapper.appendChild(menu);
+  document.body.appendChild(menuWrapper);
 }
 
 function videoBackground() {
