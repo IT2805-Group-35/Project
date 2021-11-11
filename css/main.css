@@ -542,7 +542,7 @@ p#droner {
   width: 757px;
   height: 255px;
   right: 10px;
-  top: 703px;
+  top: 503px;
 
 <<<<<<< HEAD
   font-family: Lato, sans-serif;
@@ -562,7 +562,7 @@ p#utstyr {
   width: 289px;
   height: 100px;
   left: 245px;
-  top: 1109px;
+  top: 900px;
 
   font-family: Lato, sans-serif;
   font-style: normal;
@@ -578,7 +578,7 @@ position: absolute;
 width: 400px;
 height: 465px;
 left: 200px;
-top: 1220px;
+top: 1020px;
 
 font-family: Lato, sans-serif;
 font-style: normal;
@@ -590,7 +590,7 @@ color: #000000;
 }
 
 #dronenavn {
-  position: absolute;
+position: absolute;
 width: 222px;
 height: 52px;
 left: 290px;
@@ -615,16 +615,16 @@ position: absolute;
 width: 700px;
 height: 400px;
 left: 1100px;
-top: 1109px;
+top: 919px;
 
 background: url(.jpg);
 border-radius: 5px;
 }
 
 #utstyrbakgrunn {
-  position: absolute;
+position: absolute;
 width: 100%;
-height: 1000px;
+height: 900px;
 left: 0px;
 top: 1600px;
 
