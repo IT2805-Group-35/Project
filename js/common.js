@@ -116,9 +116,6 @@ function insertMenu() {
  * has been placed to unsure it's placed at the end of the document.
  */
 function insertFooter() {
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  const windowWidth = window.innerWidth || document.documentElement.clientWidth;
-
   const menu = document.createElement('div');
   const menuWrapper = document.createElement('div');
   menu.id = 'footer';
