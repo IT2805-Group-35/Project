@@ -14,13 +14,17 @@ function calculatePrice() {
     // Calculates differentiated prices based on whether the user wants only photos, videos or both
     if (products === "Fotografi") {
         price = Math.round(priceHour * amountHours);
+        document.getElementById('print').removeAttribute('disabled');
     }
     else if (products === "Video") {
         price = Math.round(priceVideo * amountHours);
+        document.getElementById('print').setAttribute('disabled', 'disabled');
+        document.getElementById('print').checked = false;
     }
 
     else if (products ==="VideoPhoto") {
         price = Math.round(pricePhotoVideo * amountHours);
+        document.getElementById('print').removeAttribute('disabled');
     }
 
     if (print === true) {
