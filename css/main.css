@@ -542,16 +542,13 @@ p#droner {
   width: 757px;
   height: 255px;
   right: 10px;
-<<<<<<< HEAD
   top: 503px;
 
 <<<<<<< HEAD
   font-family: Lato, sans-serif;
 =======
-=======
-  top: 703px;
->>>>>>> e2bbae9211e7aec6090717d8c27f0bbaddc979a6
   font-family: 'Lato', sans-serif;
+>>>>>>> 9f391489efd78c37329389b19bc2d4a14a92eb06
   font-style: normal;
   font-weight: 300;
   font-size: 75px;
@@ -574,7 +571,7 @@ p#utstyr {
   line-height: 58px;
   text-align: center;
 
-  color: white;
+  color: #white;
 }
 p#dronetekst {
 position: absolute;
@@ -620,20 +617,15 @@ height: 400px;
 left: 1100px;
 top: 919px;
 
-/*background: url(.jpg);*/
+background: url(.jpg);
 border-radius: 5px;
 }
 
 #utstyrbakgrunn {
 position: absolute;
 width: 100%;
-<<<<<<< HEAD
 height: 900px;
 left: 0px;
-=======
-height: 1000px;
-left: 0;
->>>>>>> e2bbae9211e7aec6090717d8c27f0bbaddc979a6
 top: 1600px;
 
 background: #1A232C;
@@ -645,29 +637,11 @@ height: 343px;
 left: 900px;
 top: 180px;
 
-font-family: Merriweather, serif;
+font-family: Merriweather;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 
 color: #FFFFFF;
-}
-
-#reset_button {
-    background-color: #082434;
-    border: 1px solid rgb(255, 255, 255);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    left: 2%;
-    position: relative;
-    transition-duration: 0.4s;
-}
-#reset_button:hover {
-    background-color: #1c373b;
-    color: white;
 }
