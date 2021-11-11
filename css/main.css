@@ -155,7 +155,7 @@ h2, h3 {
 .image-left {
     display: block;
     float: left;
-    max-width: 50%;
+    max-width: 40%;
     margin-bottom: 2rem;
     padding-left: 3rem;
     padding-right: 4rem;
