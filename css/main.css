@@ -525,3 +525,15 @@ textarea[type=text]{
     background-color: #1c373b;
     color: white;
   }
+#your_message{
+    width: 40%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    background-color: #031c2b;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 2%;
+}
