@@ -17,11 +17,11 @@ const menuItems = [
     },
     {
         name: "Portfolio",
-        link: "portfolio.html"
+        link: "portfolio.html",
     },
     {
         name: "Priser",
-        link: "prices.html"
+        link: "services-and-prices.html",
     },
     {
         name: "Kontakt",
