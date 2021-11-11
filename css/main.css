@@ -593,8 +593,6 @@ p#utstyr {
   font-size: 48px;
   line-height: 58px;
   text-align: center;
-
-  color: white;
 }
 p#dronetekst {
 position: absolute;
@@ -612,7 +610,7 @@ line-height: 23px;
 color: #000000;
 }
 
-#dronenavn {
+p.dronenavn {
 position: absolute;
 width: 222px;
 height: 52px;
@@ -622,7 +620,7 @@ font-size: 48px;
 line-height: 43px;
 color: #FFFFFF;
 }
-#droneseparator {
+.droneseparator {
   position: relative;
   width: 301px;
   height: 33px;
@@ -642,7 +640,7 @@ top: 919px;
 border-radius: 5px;
 }
 
-#utstyrbakgrunn {
+.utstyrbakgrunn {
 position: absolute;
 width: 100%;
 height: 900px;
@@ -651,7 +649,7 @@ top: 1600px;
 
 background: #1A232C;
 }
-#dronebeskrivelse {
+p.dronebeskrivelse {
 position: absolute;
 width: 782px;
 height: 400px;
