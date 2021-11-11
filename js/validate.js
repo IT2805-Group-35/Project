@@ -9,14 +9,14 @@ function validation_mail()
     {
         form.classList.add("valid");
         form.classList.remove("invalid");
-        text.innerHTML = "Your Email Address is Valid"
+        text.innerHTML = "&emsp;&emsp;&emsp;Din email-adresse er gyldig :)"
         text.style.color = "#00ff00";
     }
     else
     {
         form.classList.remove("valid");
         form.classList.add("invalid");
-        text.innerHTML = "Please Enter Valid Email Address"
+        text.innerHTML = "&emsp;&emsp;&emsp;Skriv inn en gyldig email-adresse"
         text.style.color = "#ff0000";
     }
     if (email == "")
@@ -39,14 +39,14 @@ function validation_tlf()
     {
         form_2.classList.add("valid");
         form_2.classList.remove("invalid");
-        text_2.innerHTML = "Riktig format på telefon"
+        text_2.innerHTML = "&emsp;&emsp;&emsp;Gyldig format :)"
         text_2.style.color = "#00ff00";
     }
     else
     {
         form_2.classList.remove("valid");
         form_2.classList.add("invalid");
-        text_2.innerHTML = "Skriv inn riktig format på telefonr"
+        text_2.innerHTML = "&emsp;&emsp;&emsp;Husk å skrive inn landskode. F.eks 0047 "
         text_2.style.color = "#ff0000";
     }
     if (telephone == "")
@@ -71,14 +71,14 @@ function validation_name()
     {
         form_3.classList.add("valid");
         form_3.classList.remove("invalid");
-        text_3.innerHTML = "Skriv inn både fornavn og etternavn"
+        text_3.innerHTML = "&emsp;&emsp;&emsp;Gyldig format :)"
         text_3.style.color = "#00ff00";
     }
     else
     {
         form_3.classList.remove("valid");
         form_3.classList.add("invalid");
-        text_3.innerHTML = "Skriv inn både fornavn og etternavn"
+        text_3.innerHTML = "&emsp;&emsp;&emsp;Husk å skrive etternavn"
         text_3.style.color = "#ff0000";
     }
     if (name == "")
@@ -89,3 +89,5 @@ function validation_name()
         text_3.style.color = "#00ff00";
     }
 }
+
+
