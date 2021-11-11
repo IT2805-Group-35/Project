@@ -55,15 +55,10 @@ section {
     margin-right: auto;
 }
 
-li li {
-    list-style-type: lower-alpha;
-}
-
 time {
     font-style: italic;
 }
 
-li {
-    margin-bottom: 20px;
-    margin-top: 10px;
+li, ul {
+    margin-bottom: 1rem;
 }
