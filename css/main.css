@@ -273,6 +273,7 @@ h2, h3 {
     justify-items: stretch;
 }
 
+/* Three different styles of displaying image series */
 .image-series.masonry-1 img:nth-child(1), .image-series.masonry-1 img:nth-child(4){
     grid-column: span 2;
 }
@@ -304,7 +305,6 @@ h2, h3 {
 .image-series.masonry-3 img:nth-child(3){
     grid-column: span 5;
 }
-
 
 .image-series__image {
     object-fit: cover;
