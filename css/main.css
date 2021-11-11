@@ -625,10 +625,10 @@ top: 1600px;
 background: #1A232C;
 }
 #dronebeskrivelse {
-  position: absolute;
+position: absolute;
 width: 782px;
-height: 343px;
-left: 900px;
+height: 400px;
+left: 1050px;
 top: 180px;
 
 font-family: Merriweather;
