@@ -79,7 +79,7 @@ Video background
  */
 const videoSources = [
     {
-        url: "https://folk.ntnu.no/joakilan/webtek-video/webtek2.webm",
+        url: "video/webtek2.webm",
         type: "video/webm",
     },
 ];
