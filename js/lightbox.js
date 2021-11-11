@@ -1,3 +1,7 @@
+/*
+ * A simple lightbox (fullscreen image viewer) implementation in vanilla javascript.
+ */
+
 const lightboxTemplate = `
     <div class="lightbox__header">
         <span class="lightbox__image-count"></span>
@@ -86,6 +90,7 @@ class Lightbox {
 
     nextImage() {
         if (!this.isOpen) return;
+        // Make sure we loop to the first image when we go past the end.
         const nextImageIndex = 
             this.currentImageIndex == this.nodes.length - 1 ?
             0 : this.currentImageIndex + 1;
@@ -95,6 +100,7 @@ class Lightbox {
 
     previousImage() {
         if (!this.isOpen) return;
+        // Make sure we loop to the last image when we go before the first.
         const previousImageIndex = 
             this.currentImageIndex == 0 ?
             this.nodes.length-1 : this.currentImageIndex - 1;
@@ -136,6 +142,8 @@ class Lightbox {
         const currentThumbOffsetLeft = this.nodes[this.currentImageIndex]
             .thumb
             .offsetLeft;
+        // How much we have to move the thumbnails to the left to place the active
+        // thumbnail at the start (slight offset if there is a previous thumb) of the content.
         const marginLeft = currentThumbOffsetLeft == 0 ?
             0 : -(currentThumbOffsetLeft*2)+75;
         this.node.querySelector('.lightbox__thumbs')
@@ -143,10 +151,13 @@ class Lightbox {
     }
 
     updateProgress() {
+        // Width of the progress bar at the bottom in percent.
+        // Indicates how far into the image series the user is.
         const width = 100 * ((this.currentImageIndex+1) / this.nodes.length);
         this.node.querySelector('.lightbox__progress-bar')
             .style
             .width = width+'%';
+        // Update the text at the top of the lightbox.
         this.node.querySelector('.lightbox__image-count')
             .innerHTML = `${this.currentImageIndex+1} av ${this.nodes.length}`;
     }
