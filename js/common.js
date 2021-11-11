@@ -21,6 +21,10 @@ const menuItems = [
         link: "portfolio.html",
     },
     {
+        name: "Utstyr",
+        link: "drones_and_cameras.html",
+    },
+    {
         name: "Priser",
         link: "services_and_prices.html",
     },
@@ -31,26 +35,13 @@ const menuItems = [
 ];
 
 const footerItems = [
+
     {
-        name: "Forside",
-        link: "index.html",
+        name: "Vilkår",
+        link: "terms_of_services.html",
     },
-    {
-        name: "Om meg",
-        link: "about.html",
-    },
-    {
-        name: "Portfolio",
-        link: "portfolio.html",
-    },
-    {
-        name: "Priser",
-        link: "services_and_prices.html",
-    },
-    {
-        name: "Kontakt",
-        link: "contact.html",
-    },
+
+
 ];
 
 /*
@@ -98,7 +89,7 @@ function insertMenu() {
     menu.id = 'menu';
     menu.style.zIndex = 1000;
 
-    footerItems.forEach(item => {
+    menuItems.forEach(item => {
         const node = document.createElement('a');
         node.href = item.link
         node.textContent = item.name;
