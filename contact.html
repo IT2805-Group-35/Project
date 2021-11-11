@@ -11,45 +11,35 @@
     <script src="js/common.js" defer></script>
 </head>
 <body>
-    <header><h1 id="header-1">Kontakt meg</h1></header>
-    <div>
-        <h3>
-            Din mail:
-        </h3>
+    <header><h1 id="header-1">Kontakt</h1></header>
+    
+    <div id="contact_body">
+        <h3 id ="contact_header" style="color: rgb(201, 201, 201);">Fyll ut kontaktskjemaet for å få et tilbud</h3>
         <form id="form" action="#">
             <div class="inputbox">
-                <input type="text" name="" id="email" placeholder="enter email" onkeydown="validation_mail()">
+                <input type="text" name="" id="email" placeholder="Din e-mailadresse" onkeydown="validation_mail()">
                 <span id="text"></span>
             </div>
 
-        <h3>
-            Ditt telefonummer:
-        </h3>
             <div class="inputbox">
-                <input type="text" name="" id="telephone" placeholder="Telefonnummer" onkeydown="validation_tlf()">
+                <input type="text" name="" id="telephone" placeholder="Ditt telefonnummer" onkeydown="validation_tlf()">
                 <span id="text_2"></span>
             </div>
 
-        <h3>
-            Ditt navn:
-        </h3>
 
             <div class="inputbox">
-                <input type="text" name="" id="name" placeholder="Ola Nordmann" onkeydown="validation_name()">
+                <input type="text" name="" id="name" placeholder="Ditt navn" onkeydown="validation_name()">
                 <span id="text_3"></span>
             </div>
-        <h3>
-            Din melding:
-        </h3>            
+       
 
             <div class="inputbox">
-                <textarea id="w3review" name="w3review" rows="10" cols="50">
+                <textarea type="text" id="your_message" name="contact_message" placeholder="Din melding" rows="10" cols="50">
                 </textarea>
             </div>
             <div>
-                <button>Send</button>
+                <button id="contact_button">Send melding</button>
             </div>
-            
         </form>
     </div>
 
