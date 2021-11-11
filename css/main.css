@@ -24,6 +24,26 @@ body {
     height: 1.2rem;
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+#footer a {
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-family: "Lato", sans-serif;
+}
+
+#footer a img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
 #bg-video {
     position: fixed;
     top: 0;
@@ -610,8 +630,6 @@ width: 700px;
 height: 400px;
 left: 1100px;
 top: 919px;
-
-background: url(.jpg);
 border-radius: 5px;
 }
 
